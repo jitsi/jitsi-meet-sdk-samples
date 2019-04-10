@@ -5,6 +5,7 @@ as follows:
 
 * **android/java**: Andrtoid example, written in Java
 * **ios/objc**: iOS example, written in Objective-C
+* **ios/swift-pip**: iOS example, written in Swift and showing how Picture-in-Picture can be implemented
 
 [Jitsi Meet]: https://github.com/jitsi/jitsi-meet
 
