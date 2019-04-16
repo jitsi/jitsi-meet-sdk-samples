@@ -177,8 +177,8 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-JitsiSDKTest/Pods-JitsiSDKTest-frameworks.sh",
-				"${PODS_ROOT}/JitsiMeetSDK/jitsi-meet-ios-sdk-releases-2.0.0/Frameworks/JitsiMeet.framework",
-				"${PODS_ROOT}/JitsiMeetSDK/jitsi-meet-ios-sdk-releases-2.0.0/Frameworks/WebRTC.framework",
+				"${PODS_ROOT}/JitsiMeetSDK/Frameworks/JitsiMeet.framework",
+				"${PODS_ROOT}/JitsiMeetSDK/Frameworks/WebRTC.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (

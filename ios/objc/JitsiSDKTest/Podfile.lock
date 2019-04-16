@@ -1,16 +1,16 @@
 PODS:
-  - JitsiMeetSDK (2.0.0)
+  - JitsiMeetSDK (2.1.0)
 
 DEPENDENCIES:
-  - JitsiMeetSDK
+  - JitsiMeetSDK (~> 2.1.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - JitsiMeetSDK
 
 SPEC CHECKSUMS:
-  JitsiMeetSDK: ab7a28318ea1ec4b4f20d3d2f124012eefb598be
+  JitsiMeetSDK: 3e66564af7f38a19142338955dd7f581801852b3
 
-PODFILE CHECKSUM: 96bc49d94f93106510ab83bda2c120f656a31f68
+PODFILE CHECKSUM: 9d8f0717d19a8522638207d28c9e2e52cb93f01e
 
 COCOAPODS: 1.6.1
