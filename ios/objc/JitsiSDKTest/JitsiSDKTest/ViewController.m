@@ -17,7 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [JMCallKitProxy addListener:self];
+    self.textField.delegate = self;
 }
 
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
@@ -38,6 +40,49 @@
         ConferenceViewController *vc = [segue destinationViewController];
         vc.room = [self.textField text];
     }
+}
+
+- (IBAction)simulateIncomingCall:(id)sender {
+    NSLog(@"Simulating incoming call");
+    
+    NSString *room = self.textField.text;
+    if (!room || room.length == 0) {
+        return;
+    }
+    
+    NSUUID *uuid = [NSUUID UUID];
+    NSString *handle = [NSString stringWithFormat:@"https://meet.jit.si/%@", room];
+    NSString *displayName = @"Fellow Jitster";
+    
+    [JMCallKitProxy reportNewIncomingCallWithUUID:uuid
+                                           handle:handle
+                                      displayName:displayName
+                                         hasVideo:YES
+                                       completion:(^(NSError *error) {
+                                            NSLog(@"Error: %@", error);
+                                       })];
+}
+
+#pragma mark - UITextFieldDelegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [self.textField resignFirstResponder];
+    return NO;
+}
+
+#pragma mark - JMCallKitListener
+
+- (void)performAnswerCallWithUUID:(NSUUID *)UUID {
+    NSLog(@"performAnswerCallWithUUID: %@", UUID);
+    NSString *uuidStr = [[UUID UUIDString] uppercaseString];
+    NSString *url = [NSString stringWithFormat:@"https://meet.jit.si/%@#config.callUUID=%@", self.textField.text, uuidStr];
+    
+    // Join the conference!
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ConferenceViewController *vc = [sb instantiateViewControllerWithIdentifier:@"conferenceViewController"];
+    vc.room = url;
+    
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 @end

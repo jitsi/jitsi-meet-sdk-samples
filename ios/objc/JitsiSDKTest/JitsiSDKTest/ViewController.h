@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@import JitsiMeet;
+
+
+@interface ViewController : UIViewController<UITextFieldDelegate, JMCallKitListener>
 
 @property (nonatomic, weak) IBOutlet UITextField *textField;
-@property (nonatomic, weak) IBOutlet UIButton *button;
+@property (nonatomic, weak) IBOutlet UIButton *joinButton;
+@property (nonatomic, weak) IBOutlet UIButton *simulateButton;
 
 @end

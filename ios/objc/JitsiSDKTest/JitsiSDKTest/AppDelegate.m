@@ -27,6 +27,9 @@
         }];
     [JitsiMeet sharedInstance].defaultConferenceOptions = defaultOptions;
 
+    // Initialize CallKit
+    [JMCallKitProxy configureProviderWithLocalizedName:@"Jitsi SDK Test" ringtoneSound:nil iconTemplateImageData:nil];
+
     return YES;
 }
 
