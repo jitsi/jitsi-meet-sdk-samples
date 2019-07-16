@@ -31,7 +31,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     // Jitsi Meet
-    implementation ('org.jitsi.react:jitsi-meet-sdk:2.1.0') { transitive = true }
+    implementation ('org.jitsi.react:jitsi-meet-sdk:2.2.2') { transitive = true }
 
     // Glide
     implementation("com.github.bumptech.glide:glide:4.7.1") {
