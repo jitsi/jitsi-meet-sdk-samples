@@ -10,6 +10,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    if (self.room == nil) {
+        NSLog(@"Room is nul!");
+
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self dismissViewControllerAnimated:YES completion:nil];
+        });
+
+        return;
+    }
+
     // Attach this controller as the delegate.
     JitsiMeetView *jitsiView = (JitsiMeetView*)self.view;
     jitsiView.delegate = self;
