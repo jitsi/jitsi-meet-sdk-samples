@@ -5,7 +5,7 @@ as follows:
 
 ## Android
 
-* **android/java**: Andrtoid example, written in Java
+* **android/java**: Android example, written in Java
 
 ## iOS
 
