@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE268EBA2345EF0F00969937 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE268EB92345EF0F00969937 /* AppDelegate.m */; };
+		DE268EC02345EF0F00969937 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE268EBF2345EF0F00969937 /* ViewController.m */; };
+		DE268EC32345EF0F00969937 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE268EC12345EF0F00969937 /* Main.storyboard */; };
+		DE268EC52345EF1000969937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE268EC42345EF1000969937 /* Assets.xcassets */; };
+		DE268EC82345EF1000969937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE268EC62345EF1000969937 /* LaunchScreen.storyboard */; };
+		DE268ECB2345EF1000969937 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE268ECA2345EF1000969937 /* main.m */; };
+		DE268ED22345EF9200969937 /* vendor in Resources */ = {isa = PBXBuildFile; fileRef = DE268ED12345EF9200969937 /* vendor */; };
+		DE268ED62345EF9C00969937 /* JitsiMeet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE268ED42345EF9C00969937 /* JitsiMeet.framework */; };
+		DE268ED72345EF9C00969937 /* JitsiMeet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE268ED42345EF9C00969937 /* JitsiMeet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DE268ED82345EF9C00969937 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE268ED52345EF9C00969937 /* WebRTC.framework */; };
+		DE268ED92345EF9C00969937 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE268ED52345EF9C00969937 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DE268EDD2345F14600969937 /* ConferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE268EDC2345F14600969937 /* ConferenceViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DE268EDA2345EF9C00969937 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DE268ED72345EF9C00969937 /* JitsiMeet.framework in Embed Frameworks */,
+				DE268ED92345EF9C00969937 /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DE268EB52345EF0F00969937 /* NoPodsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoPodsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE268EB82345EF0F00969937 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DE268EB92345EF0F00969937 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DE268EBE2345EF0F00969937 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DE268EBF2345EF0F00969937 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DE268EC22345EF0F00969937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE268EC42345EF1000969937 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE268EC72345EF1000969937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE268EC92345EF1000969937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE268ECA2345EF1000969937 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE268ED12345EF9200969937 /* vendor */ = {isa = PBXFileReference; lastKnownFileType = folder; path = vendor; sourceTree = "<group>"; };
+		DE268ED42345EF9C00969937 /* JitsiMeet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JitsiMeet.framework; path = vendor/Frameworks/JitsiMeet.framework; sourceTree = "<group>"; };
+		DE268ED52345EF9C00969937 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = vendor/Frameworks/WebRTC.framework; sourceTree = "<group>"; };
+		DE268EDB2345F14600969937 /* ConferenceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConferenceViewController.h; sourceTree = "<group>"; };
+		DE268EDC2345F14600969937 /* ConferenceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConferenceViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE268EB22345EF0F00969937 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE268ED62345EF9C00969937 /* JitsiMeet.framework in Frameworks */,
+				DE268ED82345EF9C00969937 /* WebRTC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE268EAC2345EF0F00969937 = {
+			isa = PBXGroup;
+			children = (
+				DE268ED12345EF9200969937 /* vendor */,
+				DE268EB72345EF0F00969937 /* NoPodsSample */,
+				DE268EB62345EF0F00969937 /* Products */,
+				DE268ED32345EF9C00969937 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DE268EB62345EF0F00969937 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE268EB52345EF0F00969937 /* NoPodsSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE268EB72345EF0F00969937 /* NoPodsSample */ = {
+			isa = PBXGroup;
+			children = (
+				DE268EB82345EF0F00969937 /* AppDelegate.h */,
+				DE268EB92345EF0F00969937 /* AppDelegate.m */,
+				DE268EBE2345EF0F00969937 /* ViewController.h */,
+				DE268EBF2345EF0F00969937 /* ViewController.m */,
+				DE268EDB2345F14600969937 /* ConferenceViewController.h */,
+				DE268EDC2345F14600969937 /* ConferenceViewController.m */,
+				DE268EC12345EF0F00969937 /* Main.storyboard */,
+				DE268EC42345EF1000969937 /* Assets.xcassets */,
+				DE268EC62345EF1000969937 /* LaunchScreen.storyboard */,
+				DE268EC92345EF1000969937 /* Info.plist */,
+				DE268ECA2345EF1000969937 /* main.m */,
+			);
+			path = NoPodsSample;
+			sourceTree = "<group>";
+		};
+		DE268ED32345EF9C00969937 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE268ED42345EF9C00969937 /* JitsiMeet.framework */,
+				DE268ED52345EF9C00969937 /* WebRTC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE268EB42345EF0F00969937 /* NoPodsSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE268ECE2345EF1000969937 /* Build configuration list for PBXNativeTarget "NoPodsSample" */;
+			buildPhases = (
+				DE268EB12345EF0F00969937 /* Sources */,
+				DE268EB22345EF0F00969937 /* Frameworks */,
+				DE268EB32345EF0F00969937 /* Resources */,
+				DE268EDA2345EF9C00969937 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoPodsSample;
+			productName = NoPodsSample;
+			productReference = DE268EB52345EF0F00969937 /* NoPodsSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE268EAD2345EF0F00969937 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Jitsi Samples";
+				TargetAttributes = {
+					DE268EB42345EF0F00969937 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = DE268EB02345EF0F00969937 /* Build configuration list for PBXProject "NoPodsSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE268EAC2345EF0F00969937;
+			productRefGroup = DE268EB62345EF0F00969937 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE268EB42345EF0F00969937 /* NoPodsSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE268EB32345EF0F00969937 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE268ED22345EF9200969937 /* vendor in Resources */,
+				DE268EC82345EF1000969937 /* LaunchScreen.storyboard in Resources */,
+				DE268EC52345EF1000969937 /* Assets.xcassets in Resources */,
+				DE268EC32345EF0F00969937 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE268EB12345EF0F00969937 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE268EDD2345F14600969937 /* ConferenceViewController.m in Sources */,
+				DE268EC02345EF0F00969937 /* ViewController.m in Sources */,
+				DE268EBA2345EF0F00969937 /* AppDelegate.m in Sources */,
+				DE268ECB2345EF1000969937 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE268EC12345EF0F00969937 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE268EC22345EF0F00969937 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE268EC62345EF1000969937 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE268EC72345EF1000969937 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE268ECC2345EF1000969937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DE268ECD2345EF1000969937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE268ECF2345EF1000969937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/vendor/Frameworks",
+				);
+				INFOPLIST_FILE = NoPodsSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.jitsi.samples.NoPodsSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE268ED02345EF1000969937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/vendor/Frameworks",
+				);
+				INFOPLIST_FILE = NoPodsSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.jitsi.samples.NoPodsSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE268EB02345EF0F00969937 /* Build configuration list for PBXProject "NoPodsSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE268ECC2345EF1000969937 /* Debug */,
+				DE268ECD2345EF1000969937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE268ECE2345EF1000969937 /* Build configuration list for PBXNativeTarget "NoPodsSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE268ECF2345EF1000969937 /* Debug */,
+				DE268ED02345EF1000969937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE268EAD2345EF0F00969937 /* Project object */;
+}
