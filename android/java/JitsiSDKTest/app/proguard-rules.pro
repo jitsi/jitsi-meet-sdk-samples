@@ -81,6 +81,11 @@
 
 # ^^^ We added the above when we switched minifyEnabled on.
 
-# This app
+# Rule to avoid build errors related to SVGs.
+-keep public class com.horcrux.svg.** {*;}
 
+# Hermes
+-keep class com.facebook.hermes.unicode.** { *; }
+
+# This app
 -keep class net.jitsi.sdktest.** { *; }
