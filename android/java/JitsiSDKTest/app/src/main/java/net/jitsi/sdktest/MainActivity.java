@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         JitsiMeet.setDefaultConferenceOptions(defaultOptions);
     }
 
-    public void onButoonClick(View v) {
+    public void onButtonClick(View v) {
         EditText editText = findViewById(R.id.conferenceName);
         String text = editText.getText().toString();
 
