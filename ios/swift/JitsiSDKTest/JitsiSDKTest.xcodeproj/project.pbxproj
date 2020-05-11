@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42A9A5A183040A4B5768851D /* libPods-example-pip-app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A64FA28B8F1D4B0FCA2A43 /* libPods-example-pip-app.a */; };
+		C6F99C3B204DE6BE0001F710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F99C3A204DE6BE0001F710 /* AppDelegate.swift */; };
+		C6F99C3D204DE6BE0001F710 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F99C3C204DE6BE0001F710 /* ViewController.swift */; };
+		C6F99C40204DE6BE0001F710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F99C3E204DE6BE0001F710 /* Main.storyboard */; };
+		C6F99C42204DE6BE0001F710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6F99C41204DE6BE0001F710 /* Assets.xcassets */; };
+		C6F99C45204DE6BE0001F710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F99C43204DE6BE0001F710 /* LaunchScreen.storyboard */; };
+		E3DF523D2466BA2C003BDAB0 /* JitsiMeet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DF523C2466BA2C003BDAB0 /* JitsiMeet.framework */; };
+		E3DF523F2466BA36003BDAB0 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DF523E2466BA35003BDAB0 /* WebRTC.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3AFE223B8F4067D383B22ADC /* Pods-example-pip-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example-pip-app.release.xcconfig"; path = "Target Support Files/Pods-example-pip-app/Pods-example-pip-app.release.xcconfig"; sourceTree = "<group>"; };
+		4F8B610E52BD854848B8AB19 /* Pods-example-pip-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example-pip-app.debug.xcconfig"; path = "Target Support Files/Pods-example-pip-app/Pods-example-pip-app.debug.xcconfig"; sourceTree = "<group>"; };
+		79A64FA28B8F1D4B0FCA2A43 /* libPods-example-pip-app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-example-pip-app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6A34247204DF18000E062DD /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = "../../node_modules/react-native-webrtc/ios/WebRTC.framework"; sourceTree = "<group>"; };
+		C6F99C37204DE6BE0001F710 /* example-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "example-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6F99C3A204DE6BE0001F710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6F99C3C204DE6BE0001F710 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6F99C3F204DE6BE0001F710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6F99C41204DE6BE0001F710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6F99C44204DE6BE0001F710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C6F99C46204DE6BE0001F710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6F99C4F204DE79F0001F710 /* JitsiMeet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JitsiMeet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3DF523C2466BA2C003BDAB0 /* JitsiMeet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JitsiMeet.framework; path = Pods/JitsiMeetSDK/Frameworks/JitsiMeet.framework; sourceTree = "<group>"; };
+		E3DF523E2466BA35003BDAB0 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = Pods/JitsiMeetSDK/Frameworks/WebRTC.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6F99C34204DE6BE0001F710 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3DF523F2466BA36003BDAB0 /* WebRTC.framework in Frameworks */,
+				E3DF523D2466BA2C003BDAB0 /* JitsiMeet.framework in Frameworks */,
+				42A9A5A183040A4B5768851D /* libPods-example-pip-app.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AE24FC668E484B22902B8E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F8B610E52BD854848B8AB19 /* Pods-example-pip-app.debug.xcconfig */,
+				3AFE223B8F4067D383B22ADC /* Pods-example-pip-app.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C6F99C2E204DE6BE0001F710 = {
+			isa = PBXGroup;
+			children = (
+				C6F99C4D204DE79F0001F710 /* Frameworks */,
+				C6F99C38204DE6BE0001F710 /* Products */,
+				C6F99C4C204DE7230001F710 /* src */,
+				4AE24FC668E484B22902B8E0 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C6F99C38204DE6BE0001F710 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6F99C37204DE6BE0001F710 /* example-app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6F99C4C204DE7230001F710 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C6F99C3A204DE6BE0001F710 /* AppDelegate.swift */,
+				C6F99C41204DE6BE0001F710 /* Assets.xcassets */,
+				C6F99C46204DE6BE0001F710 /* Info.plist */,
+				C6F99C43204DE6BE0001F710 /* LaunchScreen.storyboard */,
+				C6F99C3E204DE6BE0001F710 /* Main.storyboard */,
+				C6F99C3C204DE6BE0001F710 /* ViewController.swift */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		C6F99C4D204DE79F0001F710 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3DF523E2466BA35003BDAB0 /* WebRTC.framework */,
+				C6F99C4F204DE79F0001F710 /* JitsiMeet.framework */,
+				E3DF523C2466BA2C003BDAB0 /* JitsiMeet.framework */,
+				C6A34247204DF18000E062DD /* WebRTC.framework */,
+				79A64FA28B8F1D4B0FCA2A43 /* libPods-example-pip-app.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6F99C36204DE6BE0001F710 /* example-pip-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6F99C49204DE6BE0001F710 /* Build configuration list for PBXNativeTarget "example-pip-app" */;
+			buildPhases = (
+				CF3D622B8488FC9DA1542B91 /* [CP] Check Pods Manifest.lock */,
+				C6F99C33204DE6BE0001F710 /* Sources */,
+				C6F99C34204DE6BE0001F710 /* Frameworks */,
+				C6F99C35204DE6BE0001F710 /* Resources */,
+				0FF8159FFF5597BC317F0531 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "example-pip-app";
+			productName = "example-pip-app";
+			productReference = C6F99C37204DE6BE0001F710 /* example-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6F99C2F204DE6BE0001F710 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Atlassian Inc";
+				TargetAttributes = {
+					C6F99C36204DE6BE0001F710 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C6F99C32204DE6BE0001F710 /* Build configuration list for PBXProject "JitsiSDKTest" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6F99C2E204DE6BE0001F710;
+			productRefGroup = C6F99C38204DE6BE0001F710 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6F99C36204DE6BE0001F710 /* example-pip-app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6F99C35204DE6BE0001F710 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6F99C45204DE6BE0001F710 /* LaunchScreen.storyboard in Resources */,
+				C6F99C42204DE6BE0001F710 /* Assets.xcassets in Resources */,
+				C6F99C40204DE6BE0001F710 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FF8159FFF5597BC317F0531 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-example-pip-app/Pods-example-pip-app-frameworks.sh",
+				"${PODS_ROOT}/JitsiMeetSDK/Frameworks/JitsiMeet.framework",
+				"${PODS_ROOT}/JitsiMeetSDK/Frameworks/WebRTC.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JitsiMeet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-example-pip-app/Pods-example-pip-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF3D622B8488FC9DA1542B91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-example-pip-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6F99C33204DE6BE0001F710 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6F99C3D204DE6BE0001F710 /* ViewController.swift in Sources */,
+				C6F99C3B204DE6BE0001F710 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C6F99C3E204DE6BE0001F710 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6F99C3F204DE6BE0001F710 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C6F99C43204DE6BE0001F710 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6F99C44204DE6BE0001F710 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6F99C47204DE6BE0001F710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6F99C48204DE6BE0001F710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6F99C4A204DE6BE0001F710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F8B610E52BD854848B8AB19 /* Pods-example-pip-app.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/JitsiMeetSDK/Frameworks",
+				);
+				INFOPLIST_FILE = src/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jitsi.example-app";
+				PRODUCT_NAME = "example-app";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6F99C4B204DE6BE0001F710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AFE223B8F4067D383B22ADC /* Pods-example-pip-app.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/JitsiMeetSDK/Frameworks",
+				);
+				INFOPLIST_FILE = src/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jitsi.example-app";
+				PRODUCT_NAME = "example-app";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6F99C32204DE6BE0001F710 /* Build configuration list for PBXProject "JitsiSDKTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6F99C47204DE6BE0001F710 /* Debug */,
+				C6F99C48204DE6BE0001F710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6F99C49204DE6BE0001F710 /* Build configuration list for PBXNativeTarget "example-pip-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6F99C4A204DE6BE0001F710 /* Debug */,
+				C6F99C4B204DE6BE0001F710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6F99C2F204DE6BE0001F710 /* Project object */;
+}
