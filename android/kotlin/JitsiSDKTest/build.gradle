@@ -29,16 +29,14 @@ allprojects {
     }
 }
 
-// task clean(type: Delete) {
-//     delete rootProject.buildDir
-// }
-
 repositories {
     mavenCentral()
 }
+
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 }
+
 compileKotlin {
     kotlinOptions {
         jvmTarget = "1.8"
