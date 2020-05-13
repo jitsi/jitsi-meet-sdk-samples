@@ -103,9 +103,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C6F99C36204DE6BE0001F710 /* example-pip-app */ = {
+		C6F99C36204DE6BE0001F710 /* App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C6F99C49204DE6BE0001F710 /* Build configuration list for PBXNativeTarget "example-pip-app" */;
+			buildConfigurationList = C6F99C49204DE6BE0001F710 /* Build configuration list for PBXNativeTarget "App" */;
 			buildPhases = (
 				CF3D622B8488FC9DA1542B91 /* [CP] Check Pods Manifest.lock */,
 				C6F99C33204DE6BE0001F710 /* Sources */,
@@ -117,7 +117,7 @@
 			);
 			dependencies = (
 			);
-			name = "example-pip-app";
+			name = App;
 			productName = "example-pip-app";
 			productReference = C6F99C37204DE6BE0001F710 /* example-app.app */;
 			productType = "com.apple.product-type.application";
@@ -156,7 +156,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C6F99C36204DE6BE0001F710 /* example-pip-app */,
+				C6F99C36204DE6BE0001F710 /* App */,
 			);
 		};
 /* End PBXProject section */
@@ -378,7 +378,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jitsi.example-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jitsi.example-app2";
 				PRODUCT_NAME = "example-app";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -399,7 +399,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jitsi.example-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jitsi.example-app2";
 				PRODUCT_NAME = "example-app";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -418,7 +418,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C6F99C49204DE6BE0001F710 /* Build configuration list for PBXNativeTarget "example-pip-app" */ = {
+		C6F99C49204DE6BE0001F710 /* Build configuration list for PBXNativeTarget "App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C6F99C4A204DE6BE0001F710 /* Debug */,
