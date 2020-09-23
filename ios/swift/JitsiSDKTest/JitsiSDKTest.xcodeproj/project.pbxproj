@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42A9A5A183040A4B5768851D /* libPods-example-pip-app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A64FA28B8F1D4B0FCA2A43 /* libPods-example-pip-app.a */; };
+		AF2B5DD5AAD43876AD5A165B /* libPods-App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA125B88AE286BD7B1CA101 /* libPods-App.a */; };
 		C6F99C3B204DE6BE0001F710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F99C3A204DE6BE0001F710 /* AppDelegate.swift */; };
 		C6F99C3D204DE6BE0001F710 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F99C3C204DE6BE0001F710 /* ViewController.swift */; };
 		C6F99C40204DE6BE0001F710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F99C3E204DE6BE0001F710 /* Main.storyboard */; };
@@ -18,9 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DA125B88AE286BD7B1CA101 /* libPods-App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AFE223B8F4067D383B22ADC /* Pods-example-pip-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example-pip-app.release.xcconfig"; path = "Target Support Files/Pods-example-pip-app/Pods-example-pip-app.release.xcconfig"; sourceTree = "<group>"; };
 		4F8B610E52BD854848B8AB19 /* Pods-example-pip-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example-pip-app.debug.xcconfig"; path = "Target Support Files/Pods-example-pip-app/Pods-example-pip-app.debug.xcconfig"; sourceTree = "<group>"; };
-		79A64FA28B8F1D4B0FCA2A43 /* libPods-example-pip-app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-example-pip-app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B93F50D3ADF3D5E04ECDBFF3 /* Pods-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.release.xcconfig"; path = "Target Support Files/Pods-App/Pods-App.release.xcconfig"; sourceTree = "<group>"; };
 		C6A34247204DF18000E062DD /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = "../../node_modules/react-native-webrtc/ios/WebRTC.framework"; sourceTree = "<group>"; };
 		C6F99C37204DE6BE0001F710 /* example-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "example-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F99C3A204DE6BE0001F710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +33,7 @@
 		C6F99C4F204DE79F0001F710 /* JitsiMeet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JitsiMeet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3DF523C2466BA2C003BDAB0 /* JitsiMeet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JitsiMeet.framework; path = Pods/JitsiMeetSDK/Frameworks/JitsiMeet.framework; sourceTree = "<group>"; };
 		E3DF523E2466BA35003BDAB0 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = Pods/JitsiMeetSDK/Frameworks/WebRTC.framework; sourceTree = "<group>"; };
+		FF3163A2829CCCE2ED4E69DA /* Pods-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.debug.xcconfig"; path = "Target Support Files/Pods-App/Pods-App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +43,7 @@
 			files = (
 				E3DF523F2466BA36003BDAB0 /* WebRTC.framework in Frameworks */,
 				E3DF523D2466BA2C003BDAB0 /* JitsiMeet.framework in Frameworks */,
-				42A9A5A183040A4B5768851D /* libPods-example-pip-app.a in Frameworks */,
+				AF2B5DD5AAD43876AD5A165B /* libPods-App.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +55,8 @@
 			children = (
 				4F8B610E52BD854848B8AB19 /* Pods-example-pip-app.debug.xcconfig */,
 				3AFE223B8F4067D383B22ADC /* Pods-example-pip-app.release.xcconfig */,
+				FF3163A2829CCCE2ED4E69DA /* Pods-App.debug.xcconfig */,
+				B93F50D3ADF3D5E04ECDBFF3 /* Pods-App.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -95,7 +99,7 @@
 				C6F99C4F204DE79F0001F710 /* JitsiMeet.framework */,
 				E3DF523C2466BA2C003BDAB0 /* JitsiMeet.framework */,
 				C6A34247204DF18000E062DD /* WebRTC.framework */,
-				79A64FA28B8F1D4B0FCA2A43 /* libPods-example-pip-app.a */,
+				1DA125B88AE286BD7B1CA101 /* libPods-App.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -181,7 +185,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-example-pip-app/Pods-example-pip-app-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-App/Pods-App-frameworks.sh",
 				"${PODS_ROOT}/JitsiMeetSDK/Frameworks/JitsiMeet.framework",
 				"${PODS_ROOT}/JitsiMeetSDK/Frameworks/WebRTC.framework",
 			);
@@ -192,7 +196,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-example-pip-app/Pods-example-pip-app-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-App/Pods-App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CF3D622B8488FC9DA1542B91 /* [CP] Check Pods Manifest.lock */ = {
@@ -210,7 +214,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-example-pip-app-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-App-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -366,7 +370,7 @@
 		};
 		C6F99C4A204DE6BE0001F710 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F8B610E52BD854848B8AB19 /* Pods-example-pip-app.debug.xcconfig */;
+			baseConfigurationReference = FF3163A2829CCCE2ED4E69DA /* Pods-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -387,7 +391,7 @@
 		};
 		C6F99C4B204DE6BE0001F710 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AFE223B8F4067D383B22ADC /* Pods-example-pip-app.release.xcconfig */;
+			baseConfigurationReference = B93F50D3ADF3D5E04ECDBFF3 /* Pods-App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

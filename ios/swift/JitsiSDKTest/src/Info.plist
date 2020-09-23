@@ -37,6 +37,8 @@
 	<string>The camera is needed for making calls</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>The microphone is needed for making calls</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>Local network access is needed for P2P connections.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>
