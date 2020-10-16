@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         // Initialize default options for Jitsi Meet conferences.
         val serverURL: URL
         serverURL = try {
+            // When using JaaS, replace "https://meet.jit.si" with the proper serverURL
             URL("https://meet.jit.si")
         } catch (e: MalformedURLException) {
             e.printStackTrace()
@@ -25,6 +26,8 @@ class MainActivity : AppCompatActivity() {
         }
         val defaultOptions = JitsiMeetConferenceOptions.Builder()
                 .setServerURL(serverURL)
+                // When using JaaS, set the obtained JWT here
+                //.setToken("MyJWT")
                 .setWelcomePageEnabled(false)
                 .build()
         JitsiMeet.setDefaultConferenceOptions(defaultOptions)
