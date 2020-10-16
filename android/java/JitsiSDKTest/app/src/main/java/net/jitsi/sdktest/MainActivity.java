@@ -1,6 +1,7 @@
 package net.jitsi.sdktest;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -22,14 +23,17 @@ public class MainActivity extends AppCompatActivity {
         // Initialize default options for Jitsi Meet conferences.
         URL serverURL;
         try {
+            // When using JaaS, replace "https://meet.jit.si" with the proper serverURL
             serverURL = new URL("https://meet.jit.si");
         } catch (MalformedURLException e) {
             e.printStackTrace();
             throw new RuntimeException("Invalid server URL!");
         }
         JitsiMeetConferenceOptions defaultOptions
-            = new JitsiMeetConferenceOptions.Builder()
+                = new JitsiMeetConferenceOptions.Builder()
                 .setServerURL(serverURL)
+                // When using JaaS, set the obtained JWT here
+                //.setToken("MyJWT")
                 .setWelcomePageEnabled(false)
                 .build();
         JitsiMeet.setDefaultConferenceOptions(defaultOptions);
@@ -43,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             // Build options object for joining the conference. The SDK will merge the default
             // one we set earlier and this one when joining.
             JitsiMeetConferenceOptions options
-                = new JitsiMeetConferenceOptions.Builder()
+                    = new JitsiMeetConferenceOptions.Builder()
                     .setRoom(text)
                     .build();
             // Launch the new activity with the given options. The launch() method takes care
