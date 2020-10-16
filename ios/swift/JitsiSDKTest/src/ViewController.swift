@@ -26,6 +26,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let defaultOptions = JitsiMeetConferenceOptions.fromBuilder { (builder) in
+            // for JaaS replace url with https://8x8.vc
+            builder.serverURL = URL(string: "https://meet.jit.si")
+            // for JaaS use the obtained Jitsi JWT
+//            builder.token = "SampleJWT"
+            builder.welcomePageEnabled = false
+        }
+        
+        JitsiMeet.sharedInstance().defaultConferenceOptions = defaultOptions
     }
     
     @IBAction func openJitsiMeet(sender: Any?) {
@@ -39,7 +49,7 @@ class ViewController: UIViewController {
         jitsiMeetView.delegate = self
         self.jitsiMeetView = jitsiMeetView
         let options = JitsiMeetConferenceOptions.fromBuilder { (builder) in
-            builder.welcomePageEnabled = false
+            // for JaaS use <tenant>/<roomName> format
             builder.room = room
         }
                 
