@@ -42,5 +42,5 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
 
     // Jitsi Meet
-    implementation ('org.jitsi.react:jitsi-meet-sdk:2.10.0') { transitive = true }
+    implementation ('org.jitsi.react:jitsi-meet-sdk:3.0.0') { transitive = true }
 }
