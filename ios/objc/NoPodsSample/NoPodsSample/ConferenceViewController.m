@@ -28,6 +28,12 @@
     JitsiMeetConferenceOptions *options
         = [JitsiMeetConferenceOptions fromBuilder:^(JitsiMeetConferenceOptionsBuilder *builder) {
             builder.room = self.room;
+            // Settings for audio and video
+            // builder.audioMuted = YES;
+            // builder.videoMuted = YES;
+            // Set different feature flags
+            // [builder setFeatureFlag:@"toolbox.enabled" withBoolean:NO];
+            // [builder setFeatureFlag:@"filmstrip.enabled" withBoolean:NO];
         }];
     [jitsiView join:options];
 }

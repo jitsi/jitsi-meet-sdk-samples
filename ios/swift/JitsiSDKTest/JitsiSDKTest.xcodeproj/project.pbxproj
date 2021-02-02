@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF2B5DD5AAD43876AD5A165B /* libPods-App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA125B88AE286BD7B1CA101 /* libPods-App.a */; };
+		34016D528F84E5F0EB81FCA3 /* libPods-App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7CAB85CF388261F7CF9B376 /* libPods-App.a */; };
 		C6F99C3B204DE6BE0001F710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F99C3A204DE6BE0001F710 /* AppDelegate.swift */; };
 		C6F99C3D204DE6BE0001F710 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F99C3C204DE6BE0001F710 /* ViewController.swift */; };
 		C6F99C40204DE6BE0001F710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F99C3E204DE6BE0001F710 /* Main.storyboard */; };
@@ -18,10 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1DA125B88AE286BD7B1CA101 /* libPods-App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AFE223B8F4067D383B22ADC /* Pods-example-pip-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example-pip-app.release.xcconfig"; path = "Target Support Files/Pods-example-pip-app/Pods-example-pip-app.release.xcconfig"; sourceTree = "<group>"; };
-		4F8B610E52BD854848B8AB19 /* Pods-example-pip-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example-pip-app.debug.xcconfig"; path = "Target Support Files/Pods-example-pip-app/Pods-example-pip-app.debug.xcconfig"; sourceTree = "<group>"; };
-		B93F50D3ADF3D5E04ECDBFF3 /* Pods-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.release.xcconfig"; path = "Target Support Files/Pods-App/Pods-App.release.xcconfig"; sourceTree = "<group>"; };
+		1E3FC7DA737A56D272CD9202 /* Pods-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.release.xcconfig"; path = "Target Support Files/Pods-App/Pods-App.release.xcconfig"; sourceTree = "<group>"; };
 		C6A34247204DF18000E062DD /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = "../../node_modules/react-native-webrtc/ios/WebRTC.framework"; sourceTree = "<group>"; };
 		C6F99C37204DE6BE0001F710 /* example-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "example-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F99C3A204DE6BE0001F710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -31,9 +28,10 @@
 		C6F99C44204DE6BE0001F710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6F99C46204DE6BE0001F710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6F99C4F204DE79F0001F710 /* JitsiMeet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JitsiMeet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7CAB85CF388261F7CF9B376 /* libPods-App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDF649B5474DA2345D65C2B6 /* Pods-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.debug.xcconfig"; path = "Target Support Files/Pods-App/Pods-App.debug.xcconfig"; sourceTree = "<group>"; };
 		E3DF523C2466BA2C003BDAB0 /* JitsiMeet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JitsiMeet.framework; path = Pods/JitsiMeetSDK/Frameworks/JitsiMeet.framework; sourceTree = "<group>"; };
 		E3DF523E2466BA35003BDAB0 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = Pods/JitsiMeetSDK/Frameworks/WebRTC.framework; sourceTree = "<group>"; };
-		FF3163A2829CCCE2ED4E69DA /* Pods-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.debug.xcconfig"; path = "Target Support Files/Pods-App/Pods-App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +41,7 @@
 			files = (
 				E3DF523F2466BA36003BDAB0 /* WebRTC.framework in Frameworks */,
 				E3DF523D2466BA2C003BDAB0 /* JitsiMeet.framework in Frameworks */,
-				AF2B5DD5AAD43876AD5A165B /* libPods-App.a in Frameworks */,
+				34016D528F84E5F0EB81FCA3 /* libPods-App.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,10 +51,8 @@
 		4AE24FC668E484B22902B8E0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4F8B610E52BD854848B8AB19 /* Pods-example-pip-app.debug.xcconfig */,
-				3AFE223B8F4067D383B22ADC /* Pods-example-pip-app.release.xcconfig */,
-				FF3163A2829CCCE2ED4E69DA /* Pods-App.debug.xcconfig */,
-				B93F50D3ADF3D5E04ECDBFF3 /* Pods-App.release.xcconfig */,
+				DDF649B5474DA2345D65C2B6 /* Pods-App.debug.xcconfig */,
+				1E3FC7DA737A56D272CD9202 /* Pods-App.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -99,7 +95,7 @@
 				C6F99C4F204DE79F0001F710 /* JitsiMeet.framework */,
 				E3DF523C2466BA2C003BDAB0 /* JitsiMeet.framework */,
 				C6A34247204DF18000E062DD /* WebRTC.framework */,
-				1DA125B88AE286BD7B1CA101 /* libPods-App.a */,
+				C7CAB85CF388261F7CF9B376 /* libPods-App.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,11 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6F99C49204DE6BE0001F710 /* Build configuration list for PBXNativeTarget "App" */;
 			buildPhases = (
-				CF3D622B8488FC9DA1542B91 /* [CP] Check Pods Manifest.lock */,
+				1725421B8EDAF798BE63035E /* [CP] Check Pods Manifest.lock */,
 				C6F99C33204DE6BE0001F710 /* Sources */,
 				C6F99C34204DE6BE0001F710 /* Frameworks */,
 				C6F99C35204DE6BE0001F710 /* Resources */,
-				0FF8159FFF5597BC317F0531 /* [CP] Embed Pods Frameworks */,
+				EC609BB63D90F0F00895382B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,27 +175,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0FF8159FFF5597BC317F0531 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-App/Pods-App-frameworks.sh",
-				"${PODS_ROOT}/JitsiMeetSDK/Frameworks/JitsiMeet.framework",
-				"${PODS_ROOT}/JitsiMeetSDK/Frameworks/WebRTC.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JitsiMeet.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-App/Pods-App-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CF3D622B8488FC9DA1542B91 /* [CP] Check Pods Manifest.lock */ = {
+		1725421B8EDAF798BE63035E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -219,6 +195,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC609BB63D90F0F00895382B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-App/Pods-App-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/JitsiMeetSDK/JitsiMeetSDK.framework/JitsiMeetSDK",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JitsiMeetSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-App/Pods-App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -370,7 +366,7 @@
 		};
 		C6F99C4A204DE6BE0001F710 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF3163A2829CCCE2ED4E69DA /* Pods-App.debug.xcconfig */;
+			baseConfigurationReference = DDF649B5474DA2345D65C2B6 /* Pods-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -391,7 +387,7 @@
 		};
 		C6F99C4B204DE6BE0001F710 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B93F50D3ADF3D5E04ECDBFF3 /* Pods-App.release.xcconfig */;
+			baseConfigurationReference = 1E3FC7DA737A56D272CD9202 /* Pods-App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
