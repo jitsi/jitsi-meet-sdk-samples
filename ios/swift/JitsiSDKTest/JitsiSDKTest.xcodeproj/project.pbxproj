@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,7 @@
 		C6F99C40204DE6BE0001F710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F99C3E204DE6BE0001F710 /* Main.storyboard */; };
 		C6F99C42204DE6BE0001F710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6F99C41204DE6BE0001F710 /* Assets.xcassets */; };
 		C6F99C45204DE6BE0001F710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F99C43204DE6BE0001F710 /* LaunchScreen.storyboard */; };
-		E3DF523D2466BA2C003BDAB0 /* JitsiMeet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DF523C2466BA2C003BDAB0 /* JitsiMeet.framework */; };
+		C83B718C25CAA94F007CDA24 /* JitsiMeetSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83B718B25CAA94F007CDA24 /* JitsiMeetSDK.xcframework */; };
 		E3DF523F2466BA36003BDAB0 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DF523E2466BA35003BDAB0 /* WebRTC.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,10 +27,9 @@
 		C6F99C41204DE6BE0001F710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6F99C44204DE6BE0001F710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6F99C46204DE6BE0001F710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6F99C4F204DE79F0001F710 /* JitsiMeet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JitsiMeet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CAB85CF388261F7CF9B376 /* libPods-App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C83B718B25CAA94F007CDA24 /* JitsiMeetSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = JitsiMeetSDK.xcframework; path = Pods/JitsiMeetSDK/Frameworks/JitsiMeetSDK.xcframework; sourceTree = "<group>"; };
 		DDF649B5474DA2345D65C2B6 /* Pods-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.debug.xcconfig"; path = "Target Support Files/Pods-App/Pods-App.debug.xcconfig"; sourceTree = "<group>"; };
-		E3DF523C2466BA2C003BDAB0 /* JitsiMeet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JitsiMeet.framework; path = Pods/JitsiMeetSDK/Frameworks/JitsiMeet.framework; sourceTree = "<group>"; };
 		E3DF523E2466BA35003BDAB0 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = Pods/JitsiMeetSDK/Frameworks/WebRTC.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,8 +39,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3DF523F2466BA36003BDAB0 /* WebRTC.framework in Frameworks */,
-				E3DF523D2466BA2C003BDAB0 /* JitsiMeet.framework in Frameworks */,
 				34016D528F84E5F0EB81FCA3 /* libPods-App.a in Frameworks */,
+				C83B718C25CAA94F007CDA24 /* JitsiMeetSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,9 +90,8 @@
 		C6F99C4D204DE79F0001F710 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C83B718B25CAA94F007CDA24 /* JitsiMeetSDK.xcframework */,
 				E3DF523E2466BA35003BDAB0 /* WebRTC.framework */,
-				C6F99C4F204DE79F0001F710 /* JitsiMeet.framework */,
-				E3DF523C2466BA2C003BDAB0 /* JitsiMeet.framework */,
 				C6A34247204DF18000E062DD /* WebRTC.framework */,
 				C7CAB85CF388261F7CF9B376 /* libPods-App.a */,
 			);
@@ -359,7 +357,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -376,7 +375,10 @@
 				);
 				INFOPLIST_FILE = src/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jitsi.example-app2";
 				PRODUCT_NAME = "example-app";
@@ -397,7 +399,10 @@
 				);
 				INFOPLIST_FILE = src/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jitsi.example-app2";
 				PRODUCT_NAME = "example-app";
