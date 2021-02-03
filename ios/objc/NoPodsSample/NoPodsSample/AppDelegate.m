@@ -1,7 +1,7 @@
 
 #import "AppDelegate.h"
 
-@import JitsiMeet;
+@import JitsiMeetSDK;
 
 
 @interface AppDelegate ()

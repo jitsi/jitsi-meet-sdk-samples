@@ -1,7 +1,7 @@
 
 #import <UIKit/UIKit.h>
 
-@import JitsiMeet;
+@import JitsiMeetSDK;
 
 
 @interface ConferenceViewController : UIViewController<JitsiMeetViewDelegate>

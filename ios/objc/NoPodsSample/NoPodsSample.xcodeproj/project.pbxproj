@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,23 +13,22 @@
 		DE268EC52345EF1000969937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE268EC42345EF1000969937 /* Assets.xcassets */; };
 		DE268EC82345EF1000969937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE268EC62345EF1000969937 /* LaunchScreen.storyboard */; };
 		DE268ECB2345EF1000969937 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE268ECA2345EF1000969937 /* main.m */; };
-		DE268ED22345EF9200969937 /* vendor in Resources */ = {isa = PBXBuildFile; fileRef = DE268ED12345EF9200969937 /* vendor */; };
-		DE268ED62345EF9C00969937 /* JitsiMeet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE268ED42345EF9C00969937 /* JitsiMeet.framework */; };
-		DE268ED72345EF9C00969937 /* JitsiMeet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE268ED42345EF9C00969937 /* JitsiMeet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DE268ED82345EF9C00969937 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE268ED52345EF9C00969937 /* WebRTC.framework */; };
-		DE268ED92345EF9C00969937 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE268ED52345EF9C00969937 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DE268EDD2345F14600969937 /* ConferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE268EDC2345F14600969937 /* ConferenceViewController.m */; };
+		DECAF99325CAF1C4003AD67F /* JitsiMeetSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DECAF98E25CAF1BF003AD67F /* JitsiMeetSDK.xcframework */; };
+		DECAF99425CAF1C4003AD67F /* JitsiMeetSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DECAF98E25CAF1BF003AD67F /* JitsiMeetSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DECAF99625CAF1C6003AD67F /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DECAF98F25CAF1BF003AD67F /* WebRTC.xcframework */; };
+		DECAF99725CAF1C6003AD67F /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DECAF98F25CAF1BF003AD67F /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DE268EDA2345EF9C00969937 /* Embed Frameworks */ = {
+		DECAF99525CAF1C4003AD67F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DE268ED72345EF9C00969937 /* JitsiMeet.framework in Embed Frameworks */,
-				DE268ED92345EF9C00969937 /* WebRTC.framework in Embed Frameworks */,
+				DECAF99725CAF1C6003AD67F /* WebRTC.xcframework in Embed Frameworks */,
+				DECAF99425CAF1C4003AD67F /* JitsiMeetSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,11 +46,10 @@
 		DE268EC72345EF1000969937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE268EC92345EF1000969937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE268ECA2345EF1000969937 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DE268ED12345EF9200969937 /* vendor */ = {isa = PBXFileReference; lastKnownFileType = folder; path = vendor; sourceTree = "<group>"; };
-		DE268ED42345EF9C00969937 /* JitsiMeet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JitsiMeet.framework; path = vendor/Frameworks/JitsiMeet.framework; sourceTree = "<group>"; };
-		DE268ED52345EF9C00969937 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = vendor/Frameworks/WebRTC.framework; sourceTree = "<group>"; };
 		DE268EDB2345F14600969937 /* ConferenceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConferenceViewController.h; sourceTree = "<group>"; };
 		DE268EDC2345F14600969937 /* ConferenceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConferenceViewController.m; sourceTree = "<group>"; };
+		DECAF98E25CAF1BF003AD67F /* JitsiMeetSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = JitsiMeetSDK.xcframework; path = vendor/Frameworks/JitsiMeetSDK.xcframework; sourceTree = "<group>"; };
+		DECAF98F25CAF1BF003AD67F /* WebRTC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WebRTC.xcframework; path = vendor/Frameworks/WebRTC.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE268ED62345EF9C00969937 /* JitsiMeet.framework in Frameworks */,
-				DE268ED82345EF9C00969937 /* WebRTC.framework in Frameworks */,
+				DECAF99625CAF1C6003AD67F /* WebRTC.xcframework in Frameworks */,
+				DECAF99325CAF1C4003AD67F /* JitsiMeetSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +68,6 @@
 		DE268EAC2345EF0F00969937 = {
 			isa = PBXGroup;
 			children = (
-				DE268ED12345EF9200969937 /* vendor */,
 				DE268EB72345EF0F00969937 /* NoPodsSample */,
 				DE268EB62345EF0F00969937 /* Products */,
 				DE268ED32345EF9C00969937 /* Frameworks */,
@@ -106,8 +103,8 @@
 		DE268ED32345EF9C00969937 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DE268ED42345EF9C00969937 /* JitsiMeet.framework */,
-				DE268ED52345EF9C00969937 /* WebRTC.framework */,
+				DECAF98E25CAF1BF003AD67F /* JitsiMeetSDK.xcframework */,
+				DECAF98F25CAF1BF003AD67F /* WebRTC.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,7 +119,7 @@
 				DE268EB12345EF0F00969937 /* Sources */,
 				DE268EB22345EF0F00969937 /* Frameworks */,
 				DE268EB32345EF0F00969937 /* Resources */,
-				DE268EDA2345EF9C00969937 /* Embed Frameworks */,
+				DECAF99525CAF1C4003AD67F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,7 +167,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE268ED22345EF9200969937 /* vendor in Resources */,
 				DE268EC82345EF1000969937 /* LaunchScreen.storyboard in Resources */,
 				DE268EC52345EF1000969937 /* Assets.xcassets in Resources */,
 				DE268EC32345EF0F00969937 /* Main.storyboard in Resources */,
