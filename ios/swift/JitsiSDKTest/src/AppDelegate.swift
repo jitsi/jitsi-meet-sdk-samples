@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import JitsiMeet
+import JitsiMeetSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

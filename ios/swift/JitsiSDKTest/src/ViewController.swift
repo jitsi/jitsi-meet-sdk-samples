@@ -15,7 +15,7 @@
  */
 
 import UIKit
-import JitsiMeet
+import JitsiMeetSDK
 
 class ViewController: UIViewController {
     
@@ -31,8 +31,11 @@ class ViewController: UIViewController {
             // for JaaS replace url with https://8x8.vc
             builder.serverURL = URL(string: "https://meet.jit.si")
             // for JaaS use the obtained Jitsi JWT
-//            builder.token = "SampleJWT"
+            // builder.token = "SampleJWT"
             builder.welcomePageEnabled = false
+            // Set different feature flags
+            builder.setFeatureFlag("toolbox.enabled", withBoolean: false)
+            builder.setFeatureFlag("filmstrip.enabled", withBoolean: false)
         }
         
         JitsiMeet.sharedInstance().defaultConferenceOptions = defaultOptions
@@ -51,6 +54,9 @@ class ViewController: UIViewController {
         let options = JitsiMeetConferenceOptions.fromBuilder { (builder) in
             // for JaaS use <tenant>/<roomName> format
             builder.room = room
+            // Settings for audio and video
+            // builder.audioMuted = true;
+            // builder.videoMuted = true;
         }
                 
         // setup view controller

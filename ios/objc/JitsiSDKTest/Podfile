@@ -1,7 +1,7 @@
 platform :ios, '11.0'
 
 target 'JitsiSDKTest' do
-    pod 'JitsiMeetSDK', '~> 2.10.2'
+    pod 'JitsiMeetSDK', '~> 3.0.2'
 
     post_install do |installer|
         installer.pods_project.targets.each do |target|
