@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1vv-zN-WeJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="O84-8G-U1f">
+            <objects>
+                <viewController id="1vv-zN-WeJ" customClass="ViewController" customModule="JitsiSDKScreenSharingTest" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G8S-8K-MXL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="eg. MyTestMeeting" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JfI-2r-Fw1">
+                                <rect key="frame" x="80" y="232" width="208" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="y4i-gE-xIB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2te-B2-gCs">
+                                <rect key="frame" x="304" y="234" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Mf8-hx-5FT"/>
+                                    <constraint firstAttribute="width" constant="30" id="PJX-Y8-3O0"/>
+                                </constraints>
+                                <state key="normal" title="Go"/>
+                                <connections>
+                                    <segue destination="v59-1x-1ke" kind="presentation" identifier="showMeetings" modalPresentationStyle="fullScreen" id="Vpv-ek-26b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JdP-Z4-rIQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JfI-2r-Fw1" firstAttribute="top" secondItem="JdP-Z4-rIQ" secondAttribute="top" constant="188" id="AZz-wb-Q4S"/>
+                            <constraint firstItem="JdP-Z4-rIQ" firstAttribute="trailing" secondItem="2te-B2-gCs" secondAttribute="trailing" constant="80" id="FUS-KS-VI8"/>
+                            <constraint firstItem="2te-B2-gCs" firstAttribute="centerY" secondItem="JfI-2r-Fw1" secondAttribute="centerY" id="M4p-EF-GDr"/>
+                            <constraint firstItem="JfI-2r-Fw1" firstAttribute="leading" secondItem="JdP-Z4-rIQ" secondAttribute="leading" constant="80" id="h2q-Am-sn4"/>
+                            <constraint firstItem="2te-B2-gCs" firstAttribute="leading" secondItem="JfI-2r-Fw1" secondAttribute="trailing" constant="16" id="u2N-Sd-tcn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="meetingNameInput" destination="JfI-2r-Fw1" id="ZAU-kN-eqG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wIC-Gp-Vrd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1690" y="2896"/>
+        </scene>
+        <!--Jitsi Meet View Controller-->
+        <scene sceneID="h0P-6B-bhp">
+            <objects>
+                <viewController storyboardIdentifier="JitsiMeetViewController" modalPresentationStyle="overFullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CTV-Ru-G0d" customClass="JitsiMeetViewController" customModule="JitsiSDKScreenSharingTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4rD-BZ-YDM"/>
+                        <viewControllerLayoutGuide type="bottom" id="zW5-iJ-3Yy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xts-vJ-JOT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uj6-7M-2nZ" customClass="JitsiMeetView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6l9-In-YmC"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Uj6-7M-2nZ" firstAttribute="top" secondItem="xts-vJ-JOT" secondAttribute="top" id="38n-Gi-42h"/>
+                            <constraint firstAttribute="trailing" secondItem="Uj6-7M-2nZ" secondAttribute="trailing" id="Avs-s6-GJQ"/>
+                            <constraint firstAttribute="bottom" secondItem="Uj6-7M-2nZ" secondAttribute="bottom" id="SHA-X0-vV2"/>
+                            <constraint firstItem="Uj6-7M-2nZ" firstAttribute="leading" secondItem="xts-vJ-JOT" secondAttribute="leading" id="bV4-Eb-MNd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="H6I-A4-aVS"/>
+                    <connections>
+                        <outlet property="meetView" destination="Uj6-7M-2nZ" id="TGj-n0-TSq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JMG-4d-eAy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3339" y="2898"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6D0-3f-mCF">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="v59-1x-1ke" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="O3L-Nm-yfC">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CTV-Ru-G0d" kind="relationship" relationship="rootViewController" id="bhK-wS-oqc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RG9-67-L0W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2570" y="2896"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
