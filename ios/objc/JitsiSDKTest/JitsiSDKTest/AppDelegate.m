@@ -23,7 +23,7 @@
     JitsiMeetConferenceOptions *defaultOptions
         = [JitsiMeetConferenceOptions fromBuilder:^(JitsiMeetConferenceOptionsBuilder *builder) {
             builder.serverURL = [NSURL URLWithString:@"https://meet.jit.si"];
-            builder.welcomePageEnabled = NO;
+            [builder setFeatureFlag:@"welcomepage.enabled" withBoolean:NO];
         }];
     [JitsiMeet sharedInstance].defaultConferenceOptions = defaultOptions;
 

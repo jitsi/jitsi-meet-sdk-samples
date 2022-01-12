@@ -29,7 +29,7 @@
         = [JitsiMeetConferenceOptions fromBuilder:^(JitsiMeetConferenceOptionsBuilder *builder) {
             builder.room = self.room;
             // Settings for audio and video
-            builder.audioMuted = YES;
+            //builder.audioMuted = YES;
             // builder.videoMuted = YES;
             // Set different feature flags
             // [builder setFeatureFlag:@"toolbox.enabled" withBoolean:NO];
@@ -48,8 +48,10 @@
 
 - (void)conferenceTerminated:(NSDictionary *)data {
     NSLog(@"Conference %@ terminated", self.room);
+}
+
+- (void)readyToClose:(NSDictionary *)data {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
-

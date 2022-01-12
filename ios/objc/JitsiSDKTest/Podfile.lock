@@ -1,16 +1,16 @@
 PODS:
-  - JitsiMeetSDK (3.4.1)
+  - JitsiMeetSDK (4.1.0)
 
 DEPENDENCIES:
-  - JitsiMeetSDK (~> 3.4.1)
+  - JitsiMeetSDK (~> 4.1.0)
 
 SPEC REPOS:
   trunk:
     - JitsiMeetSDK
 
 SPEC CHECKSUMS:
-  JitsiMeetSDK: e6d8fe60eb16015f5ab984b37f02e820caed784b
+  JitsiMeetSDK: 0716f9a49278330a57d8b28304f78c25ae5ab963
 
-PODFILE CHECKSUM: 7ebe1be3ceaade2624f0ac0c7d30872be908e52c
+PODFILE CHECKSUM: e84d22ebd1e4bcb2dc7e3e444d7c8c4b2447ae89
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2
