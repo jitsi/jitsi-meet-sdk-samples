@@ -2,11 +2,11 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 31
     defaultConfig {
         applicationId "net.jitsi.sdktest"
         minSdkVersion 23
-        targetSdkVersion 29
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -43,5 +43,5 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
 
     // Jitsi Meet
-    implementation ('org.jitsi.react:jitsi-meet-sdk:3.0.0') { transitive = true }
+    implementation ('org.jitsi.react:jitsi-meet-sdk:4.1.0') { transitive = true }
 }
