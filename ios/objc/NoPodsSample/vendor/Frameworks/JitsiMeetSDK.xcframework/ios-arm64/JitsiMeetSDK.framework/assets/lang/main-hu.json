@@ -53,10 +53,12 @@
         "noMessagesMessage": "A találkozón még nincsenek üzenetek. Itt kezdhet beszélgetést!",
         "nickname": {
             "popover": "Becenév kiválasztása",
-            "title": "Adjon meg egy becenevet a csevegés számára"
+            "title": "Adjon meg egy becenevet a csevegés számára",
+            "titleWithPolls": "Adjon meg egy becenevet a csevegés számára"
         },
         "privateNotice": "Privát üzenet a felhasználónak: {{recipient}}",
         "title": "Csevegés",
+        "titleWithPolls": "Csevegés",
         "you": "neked"
     },
     "connectingOverlay": {
@@ -477,8 +479,8 @@
     },
     "profile": {
         "setDisplayNameLabel": "Állítsa be a megjelenő nevet",
-        "setEmailInput": "Adjon meg egy e-mail címet",
-        "setEmailLabel": "Adja meg a gravatar e-mail címet",
+        "setEmailInput": "Adjon meg egy email címet",
+        "setEmailLabel": "Adja meg a gravatar email címet",
         "title": "Profil"
     },
     "raisedHand": "Beszélni szeretnék",
@@ -547,7 +549,7 @@
         "disableCallIntegration": "A natív hívások integrációjának letiltása",
         "disableP2P": "Kapcsolja ki a peer-to-peer módot",
         "displayName": "Megjelenő név",
-        "email": "E-mail",
+        "email": "Email",
         "header": "Beállítások",
         "profileSection": "Profil",
         "serverURL": "Kiszolgáló URL",

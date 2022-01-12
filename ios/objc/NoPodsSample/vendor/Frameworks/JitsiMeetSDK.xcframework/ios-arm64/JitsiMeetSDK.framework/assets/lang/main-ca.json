@@ -53,10 +53,12 @@
         "noMessagesMessage": "Encara no hi ha cap missatge en aquesta reunió. Comenceu una conversa aquí!",
         "nickname": {
             "popover": "Trieu un sobrenom",
-            "title": "Introduïu un sobrenom per a usar el xat"
+            "title": "Introduïu un sobrenom per a usar el xat",
+            "titleWithPolls": "Introduïu un sobrenom per a usar el xat"
         },
         "privateNotice": "Missatge privat per a {{recipient}}",
         "title": "Xat",
+        "titleWithPolls": "Xat",
         "you": "vós"
     },
     "chromeExtensionBanner": {
@@ -234,7 +236,7 @@
         "remoteControlDeniedMessage": "{{user}} ha rebutjat la petició de control remot!",
         "remoteControlErrorMessage": "S'ha produït un error en intentar sol·licitar a {{user}} permisos de control remot!",
         "remoteControlRequestMessage": "Voleu permetre a {{user}} de controlar remotament el vostre escriptori?",
-        "remoteControlShareScreenWarning": "Tingueu present que si pitgeu \"Permet\" compartireu la vostra pantalla!",
+        "remoteControlShareScreenWarning": "Tingueu present que si pitgeu \"Permet\"compartireu la vostra pantalla!",
         "remoteControlStopMessage": "La sessió de control remot ha finalitzat!",
         "remoteControlTitle": "Control d'escriptori remot",
         "Remove": "Suprimeix",
@@ -289,6 +291,29 @@
     },
     "documentSharing": {
         "title": "Document compartit"
+    },
+    "virtualBackground": {
+        "apply": "Aplicar",
+        "title": "Fons Virtuals",
+        "blur": "Difuminos",
+        "slightBlur": "Lleu Difuminos",
+        "removeBackground": "Elimina el Fons",
+        "addBackground": "Afegeix fons",
+        "pleaseWait": "Si us plau, espereu...",
+        "none": "Cap",
+        "uploadedImage": "Imatge carregada {{index}}",
+        "deleteImage": "Esborra la imatge",
+        "image1" : "Platja",
+        "image2" : "Paret blanca neutra",
+        "image3" : "Habitació blanca buida",
+        "image4" : "Llum de peu negre",
+        "image5" : "Muntanya",
+        "image6" : "Bosc ",
+        "image7" : "Sortida del sol",
+        "desktopShareError": "No s'ha pogut crear l'escriptori compartit",
+        "desktopShare":"Compartir escriptori",
+        "webAssemblyWarning": "no compatible",
+        "backgroundEffectError": "No s'ha pogut aplicar l'efecte de fons."
     },
     "feedback": {
         "average": "Mitjana",
@@ -462,6 +487,32 @@
         "newDeviceAudioTitle": "S'ha detectat un aparell d'àudio nou",
         "newDeviceAction": "Usa"
     },
+    "participantsPane": {
+        "close": "Tanca",
+        "header": "Participants",
+        "headings": {
+            "lobby": "Sala d'espera ({{count}})",
+            "participantsList": "Participants de la reunió ({{count}})",
+            "waitingLobby": "Esperant al vestíbul ({{count}})"
+        },
+        "actions": {
+            "allow": "Permetre als assistents:",
+            "allowVideo": "Permet el vídeo",
+            "audioModeration": "Deixeu de silenciar ells mateixos",
+            "blockEveryoneMicCamera": "Bloqueja el micròfon i la càmera de tothom",
+            "invite": "Convida algú",
+            "askUnmute": "Demana que es deixi de silenciare",
+            "moreModerationActions": "Més opcions de moderació",
+            "mute": "Silenciar",
+            "muteAll": "Silencia tot",
+            "muteEveryoneElse": "Silencia a tots els altres",
+            "stopEveryonesVideo": "Atura el vídeo de tothom",
+            "stopVideo": "Atura el vídeo",
+            "unblockEveryoneMicCamera": "Desbloqueja el micròfon i la càmera de tothom",
+            "videoModeration": "Comença el seu vídeo"
+        },
+        "search": "Cerca participants"
+    },
     "passwordSetRemotely": "establerta per una altre participant",
     "passwordDigitsOnly": "Fins a {{number}} dígits",
     "poweredby": "funciona amb",
@@ -575,7 +626,7 @@
     },
     "startupoverlay": {
         "title": "{{app}} requereix usar el micròfon i la càmera.",
-        "policyText": " "
+        "policyText": ""
     },
     "suspendedoverlay": {
         "rejoinKeyTitle": "Torna a entrar",
@@ -604,12 +655,17 @@
             "moreOptions": "Mostra més opcions",
             "mute": "Activa o desactiva el silenci de l'àudio",
             "muteEveryone": "Silencia tothom",
+            "muteEveryoneElse": "Silencia a tots els altres participants",
+            "muteEveryonesVideo": "Desactiva el vídeo de tothom",
+            "muteEveryoneElsesVideo": "Desactiva el vídeo a tots els altres participants",
+            "participants": "Participants",
             "pip": "Activa o desactiva el mode imatge en imatge",
             "privateMessage": "Envia un missatge privat",
             "profile": "Edita el perfil",
             "raiseHand": "Aixeca o abaixa la mà",
             "recording": "Activa o desactiva l'enregistrament",
             "remoteMute": "Silencia el participant",
+            "remoteVideoMute": "Desactiva la càmera del participant",
             "Settings": "Activa o desactiva la configuració",
             "sharedvideo": "Activa o desactiva la compartició de vídeo",
             "shareRoom": "Convida-hi algú",
@@ -621,9 +677,14 @@
             "toggleCamera": "Activa o desactiva la càmera",
             "videomute": "Activa o desactiva el vídeo",
             "videoblur": "Activa o desactiva el difuminat",
+            "selectBackground": "Seleccioneu Fons",
+            "expand": "Ampliar",
+            "collapse": "Col·lapse",
             "toggleFilmstrip": "Activa o desactiva la tira"
         },
         "addPeople": "Afegeix persones a la trucada",
+        "audioSettings": "Configuració d'àudio",
+        "videoSettings": "Configuració de vídeo",
         "audioOnlyOff": "Desactiva el mode de poc ample de banda",
         "audioOnlyOn": "Activa el mode de poc ample de banda",
         "audioRoute": "Seleccioneu l'aparell de so",
@@ -732,13 +793,18 @@
         "standardDefinition": "Definició estàndard"
     },
     "videothumbnail": {
+        "connectionInfo": "Informació de connexió",
         "domute": "Silencia",
+        "domuteVideo": "Desactiva la càmera",
         "domuteOthers": "Silencia a tots els altres participants",
+        "domuteVideoOfOthers": "Desactiva la càmera de tots els altres",
         "flip": "Capgira",
+        "grantModerator": "Concedir drets de moderador",
         "kick": "Expulsa",
         "moderator": "Moderador",
         "mute": "El participant és silenciat",
         "muted": "Silenciat",
+        "videoMuted": "Càmera desactivada",
         "remoteControl": "Inicia o atura el control remot",
         "show": "Mostra-ho en l'escena",
         "videomute": "El participant ha aturat la càmera"
@@ -780,5 +846,42 @@
     },
     "helpView": {
         "header": "Centre d'ajuda"
+    },
+    "lobby": {
+        "admit": "Acceptar",
+        "admitAll": "Acceptar Tots",
+        "knockingParticipantList": "Participants en espera",
+        "allow": "Permetre",
+        "backToKnockModeButton": "Sol·licitar entrada",
+        "dialogTitle": "Sala d’espera",
+        "disableDialogContent": "La sala d’espera està habilitada actualment. Aquesta funció garanteix que els participants no desitjats no puguin unir-se a la seva reunió. Vols deshabilitar-ho?",
+        "disableDialogSubmit": "Deshabilitat",
+        "emailField": "Introdueix el teu email",
+        "enableDialogPasswordField": "Estableix la contrasenya (opcional)",
+        "enableDialogSubmit": "Habilitat",
+        "enableDialogText": "La sala d’espera li permet protegir la seva reunió en permetre que les persones només entrin després d’una aprovació formal per part d’un moderador.",
+        "enterPasswordButton": "Introduir la contrasenya de la reunió",
+        "enterPasswordTitle": "Introdueixi la contrasenya per a unir-se a la reunió",
+        "errorMissingPassword": "Si us plau, Introdueixi la contrasenya de la reunió",
+        "invalidPassword": "Contrasenya errònia",
+        "joiningMessage": "T’uniràs a la reunió tan aviat com algú accepti la teva sol·licitud",
+        "joinWithPasswordMessage": "Intentant unir-se amb contrasenya, esperi ...",
+        "joinRejectedMessage": "Un moderador va rebutjar la seva sol·licitud per a unir-se.",
+        "joinTitle": "Unir-se a la reunió",
+        "joiningTitle": "Sol·licitar unir-se a la reunió...",
+        "joiningWithPasswordTitle": "Connectant-se a la reunió amb contrasenya...",
+        "knockButton": "Sol·licitar entrada a la reunió",
+        "knockTitle": "Algú vol unir-se a la reunió",
+        "nameField": "Introdueix el teu nom",
+        "notificationLobbyAccessDenied": "{{originParticipantName}} ha rebutjat l’entrada a la reunió de {{targetParticipantName}}",
+        "notificationLobbyAccessGranted": "{{originParticipantName}} ha acceptat l’entrada a la reunió de {{targetParticipantName}}",
+        "notificationLobbyDisabled": "La sala d’espera ha estat deshabilitada per {{originParticipantName}}",
+        "notificationLobbyEnabled": "La sala d’espera ha estat habilitada per {{originParticipantName}}",
+        "notificationTitle": "Sala d’espera",
+        "passwordField": "Introduir la contrasenya de la reunió",
+        "passwordJoinButton": "Unir-se",
+        "reject": "Rebutjar",
+        "rejectAll": "Rebutjar Tots",
+        "toggleLabel": "Habilitar sala d’espera"
     }
 }

@@ -83,4 +83,37 @@
  */
 - (void)endpointTextMessageReceived:(NSDictionary *)data;
 
+/**
+ * Called when a participant toggled shared screen.
+ *
+ * The `data` dictionary contains a `participantId` key with the id of the participant  and a 'sharing' key with boolean value.
+ */
+- (void)screenShareToggled:(NSDictionary *)data;
+
+/**
+ * Called when a chat message is received.
+ *
+ * The `data` dictionary contains `message`, `senderId` and  `isPrivate` keys.
+ */
+- (void)chatMessageReceived:(NSDictionary *)data;
+
+/**
+ * Called when the chat dialog is displayed/hidden.
+ *
+ * The `data` dictionary contains a `isOpen` key.
+ */
+- (void)chatToggled:(NSDictionary *)data;
+
+/**
+ * Called when videoMuted state changed.
+ *
+ * The `data` dictionary contains a `muted` key with state of the videoMuted for the localParticipant.
+ */
+- (void)videoMutedChanged:(NSDictionary *)data;
+
+/**
+ * Called when the SDK is ready to be closed. No meeting is happening at this point.
+ */
+- (void)readyToClose:(NSDictionary *)data;
+
 @end

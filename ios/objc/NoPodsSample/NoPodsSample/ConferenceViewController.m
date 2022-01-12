@@ -48,6 +48,9 @@
 
 - (void)conferenceTerminated:(NSDictionary *)data {
     NSLog(@"Conference %@ terminated", self.room);
+}
+
+- (void)readyToClose:(NSDictionary *)data {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

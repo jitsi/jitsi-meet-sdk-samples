@@ -68,10 +68,12 @@
         "noMessagesMessage": "V tejto konferencii ešte nie je žiadna správa. Začnite tu vašu diskusiu!",
         "nickname": {
             "popover": "Zvoľte meno",
-            "title": "Zadajte vašu prezývku"
+            "title": "Zadajte vašu prezývku",
+            "titleWithPolls": "Zadajte vašu prezývku"
         },
         "privateNotice": "Súkromná správa pre {{recipient}}",
         "title": "Chat",
+        "titleWithPolls": "Chat",
         "you": "Vy"
     },
     "chromeExtensionBanner": {
@@ -113,6 +115,7 @@
         "maxEnabledResolution": "send max",
         "more": "Zobraziť viac",
         "packetloss": "Strata paketov:",
+        "participant_id": "ID účastníka:",
         "quality": {
             "good": "Dobré",
             "inactive": "Neaktívne",
@@ -316,10 +319,13 @@
     "e2ee": {
         "labelToolTip": "Zvuková a obrazová komunikácia je koncovo šifrovaná"
     },
+    "embedMeeting": {
+        "title": "Vložiť toto stretnutie"
+    },
     "feedback": {
         "average": "Priemerný",
         "bad": "Zlý",
-        "detailsLabel": "Povedzte nám viac.",
+        "detailsLabel": "Povedzte nám viac",
         "good": "Dobrý",
         "rateExperience": "Ohodnoťte dojem",
         "veryBad": "Veľmi zlý",
@@ -547,7 +553,7 @@
     },
     "profile": {
         "setDisplayNameLabel": "Nastavte si meno",
-        "setEmailInput": "Zadajte e-mail",
+        "setEmailInput": "Zadajte email",
         "setEmailLabel": "Nastavte si email vašeho gravataru",
         "title": "Profil"
     },
@@ -628,7 +634,7 @@
         "disableCrashReporting": "Vypnúť oznamovanie pádov",
         "disableCrashReportingWarning": "Naozak chcete vypnúť oznamovanie pádov? Nastavenie bude aktívne po reštartovaní aplikácie.",
         "displayName": "Ukázať",
-        "email": "E-mail",
+        "email": "Email",
         "header": "Nastavenia",
         "profileSection": "Profil",
         "serverURL": "Adresa URL servera",
@@ -762,7 +768,8 @@
         "toggleCamera": "Zmeniť kameru",
         "videomute": "Vypnúť / Zapnúť kameru",
         "startvideoblur": "Rozmazať pozadie",
-        "stopvideoblur": "Ukončiť rozmazanie pozadia"
+        "stopvideoblur": "Ukončiť rozmazanie pozadia",
+        "selectBackground": "Vybrať pozadie"
     },
     "transcribing": {
         "ccButtonTooltip": "titulky vypnuť/zapnúť",
@@ -827,7 +834,9 @@
         "muted": "Vypnutý mikrofón",
         "remoteControl": "Vzdialené ovládanie",
         "show": "Ukázať v popredí",
-        "videomute": "Účastník vypol kameru"
+        "videomute": "Účastník vypol kameru",
+        "videoMuted": "Vypnutá kamera",
+        "domuteVideoOfOthers": "Vypnúť kamery ostatným"
     },
     "welcomepage": {
         "accessibilityLabel": {
@@ -875,7 +884,7 @@
         "dialogTitle": "Čakáreň",
         "disableDialogContent": "Čakáreň je zapnutá. Táto funkcia zabezpečuje, že do konferencie nemôžu vstúpiť neželaní účastníci. Chcete ju vypnúť?",
         "disableDialogSubmit": "Vypnúť",
-        "emailField": "Zadajte vašu e-mailovú adresu",
+        "emailField": "Zadajte vašu emailovú adresu",
         "enableDialogPasswordField": "Nastaviť heslo (voliteľné)",
         "enableDialogSubmit": "Zapnúť",
         "enableDialogText": "Čakáreň umožňuje zabezpečiť konferenciu tým, že účastníci môžu do konferencie vstúpiť len po schválení moderátorom.",
