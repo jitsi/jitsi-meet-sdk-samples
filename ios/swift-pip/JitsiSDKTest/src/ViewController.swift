@@ -15,7 +15,7 @@
  */
 
 import UIKit
-import JitsiMeet
+import JitsiMeetSDK
 
 class ViewController: UIViewController {
 
@@ -46,7 +46,8 @@ class ViewController: UIViewController {
         jitsiMeetView.delegate = self
         self.jitsiMeetView = jitsiMeetView
         let options = JitsiMeetConferenceOptions.fromBuilder { (builder) in
-            builder.welcomePageEnabled = true
+            builder.serverURL = URL(string: "https://meet.jit.si")
+            builder.setFeatureFlag("welcomepage.enabled", withValue: true)
         }
         jitsiMeetView.join(options)
 
@@ -69,7 +70,7 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: JitsiMeetViewDelegate {
-    func conferenceTerminated(_ data: [AnyHashable : Any]!) {
+    func ready(toClose data: [AnyHashable : Any]!) {
         DispatchQueue.main.async {
             self.pipViewCoordinator?.hide() { _ in
                 self.cleanUp()

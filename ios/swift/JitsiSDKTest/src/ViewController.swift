@@ -32,10 +32,10 @@ class ViewController: UIViewController {
             builder.serverURL = URL(string: "https://meet.jit.si")
             // for JaaS use the obtained Jitsi JWT
             // builder.token = "SampleJWT"
-            builder.welcomePageEnabled = false
+            builder.setFeatureFlag("welcomepage.enabled", withValue: false)
             // Set different feature flags
-            builder.setFeatureFlag("toolbox.enabled", withBoolean: false)
-            builder.setFeatureFlag("filmstrip.enabled", withBoolean: false)
+            //builder.setFeatureFlag("toolbox.enabled", withBoolean: false)
+            //builder.setFeatureFlag("filmstrip.enabled", withBoolean: false)
         }
         
         JitsiMeet.sharedInstance().defaultConferenceOptions = defaultOptions
@@ -79,7 +79,7 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: JitsiMeetViewDelegate {
-    func conferenceTerminated(_ data: [AnyHashable : Any]!) {
+    func ready(toClose data: [AnyHashable : Any]!) {
         cleanUp()
     }
 }
