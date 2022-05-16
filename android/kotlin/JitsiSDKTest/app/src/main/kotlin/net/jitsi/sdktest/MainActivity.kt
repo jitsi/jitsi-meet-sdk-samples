@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
     fun onButtonClick(v: View?) {
         val editText = findViewById<EditText>(R.id.conferenceName)
         val text = editText.text.toString()
-        if (text.length > 0) {
+        if (text.isNotEmpty()) {
             // Build options object for joining the conference. The SDK will merge the default
             // one we set earlier and this one when joining.
             val options = JitsiMeetConferenceOptions.Builder()
@@ -95,9 +95,10 @@ class MainActivity : AppCompatActivity() {
     private fun onBroadcastReceived(intent: Intent?) {
         if (intent != null) {
             val event = BroadcastEvent(intent)
-            when (event.getType()) {
+            when (event.type) {
                 BroadcastEvent.Type.CONFERENCE_JOINED -> Timber.i("Conference Joined with url%s", event.getData().get("url"))
                 BroadcastEvent.Type.PARTICIPANT_JOINED -> Timber.i("Participant joined%s", event.getData().get("name"))
+                else -> Timber.i("Received event: %s", event.type)
             }
         }
     }
@@ -105,6 +106,6 @@ class MainActivity : AppCompatActivity() {
     // Example for sending actions to JitsiMeetSDK
     private fun hangUp() {
         val hangupBroadcastIntent: Intent = BroadcastIntentHelper.buildHangUpIntent()
-        LocalBroadcastManager.getInstance(org.webrtc.ContextUtils.getApplicationContext()).sendBroadcast(hangupBroadcastIntent)
+        LocalBroadcastManager.getInstance(this.applicationContext).sendBroadcast(hangupBroadcastIntent)
     }
 }

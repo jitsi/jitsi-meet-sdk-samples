@@ -3,11 +3,10 @@
 buildscript {
     repositories {
         google()
-        jcenter()
-
+        mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.0.2'
+        classpath 'com.android.tools.build:gradle:7.0.4'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -15,7 +14,7 @@ buildscript {
 }
 
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.3.72'
+    id 'org.jetbrains.kotlin.jvm' version '1.5.31'
 }
 
 allprojects {
@@ -24,7 +23,8 @@ allprojects {
             url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
         }
         google()
-        jcenter()
+        mavenCentral()
+        maven { url 'https://www.jitpack.io' }
     }
 }
 
