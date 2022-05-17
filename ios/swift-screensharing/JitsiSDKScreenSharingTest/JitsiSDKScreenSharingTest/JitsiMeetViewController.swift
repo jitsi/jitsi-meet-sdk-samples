@@ -30,10 +30,13 @@ class JitsiMeetViewController: UIViewController {
     private func joinMeeting(name: String) {
         let options = JitsiMeetConferenceOptions.fromBuilder { builder in
             builder.room = name
-            builder.audioMuted = true
-            builder.videoMuted = true
             builder.userInfo = JitsiMeetUserInfo(displayName: "Test User", andEmail: nil, andAvatar: nil)
+            
+            builder.setAudioMuted(true)
+            builder.setVideoMuted(true)
+            
             builder.setFeatureFlag("ios.screensharing.enabled", withBoolean: true)
+
         }
         
         meetView.join(options)
