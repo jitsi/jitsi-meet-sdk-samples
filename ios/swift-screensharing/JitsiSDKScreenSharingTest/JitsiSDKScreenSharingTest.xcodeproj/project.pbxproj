@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E39F1B1283395E6007746BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E39F1B0283395E6007746BA /* ViewController.swift */; };
 		4E3CBC55266A1E4300EF2E8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3CBC54266A1E4300EF2E8C /* AppDelegate.swift */; };
 		4E3CBC57266A1E4300EF2E8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3CBC56266A1E4300EF2E8C /* SceneDelegate.swift */; };
 		4E3CBC5C266A1E4300EF2E8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3CBC5A266A1E4300EF2E8C /* Main.storyboard */; };
@@ -20,7 +21,6 @@
 		4E3CBCBA266A229B00EF2E8C /* SocketConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3CBCB6266A229B00EF2E8C /* SocketConnection.swift */; };
 		4E3CBCBB266A229B00EF2E8C /* DarwinNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3CBCB7266A229B00EF2E8C /* DarwinNotificationCenter.swift */; };
 		4E3CBCC0266A25E600EF2E8C /* JitsiMeetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3CBCBE266A25E600EF2E8C /* JitsiMeetViewController.swift */; };
-		4E3CBCC1266A25E600EF2E8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3CBCBF266A25E600EF2E8C /* ViewController.swift */; };
 		6D29BAE1DC8B2B4B44A0EEB3 /* Pods_JitsiSDKScreenSharingTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CAFF4595F9039A48EEB0E6 /* Pods_JitsiSDKScreenSharingTest.framework */; };
 		CEEF033974D7F9040E2FD5F1 /* Pods_Broadcast_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA99CE42A304635AE7582A3 /* Pods_Broadcast_Extension.framework */; };
 /* End PBXBuildFile section */
@@ -51,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		09CAFF4595F9039A48EEB0E6 /* Pods_JitsiSDKScreenSharingTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JitsiSDKScreenSharingTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E39F1B0283395E6007746BA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4E3CBC51266A1E4300EF2E8C /* JitsiSDKScreenSharingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JitsiSDKScreenSharingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E3CBC54266A1E4300EF2E8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E3CBC56266A1E4300EF2E8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +70,6 @@
 		4E3CBCB7266A229B00EF2E8C /* DarwinNotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarwinNotificationCenter.swift; sourceTree = "<group>"; };
 		4E3CBCBD266A235500EF2E8C /* Jitsi Screen Sharing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Jitsi Screen Sharing.entitlements"; sourceTree = "<group>"; };
 		4E3CBCBE266A25E600EF2E8C /* JitsiMeetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JitsiMeetViewController.swift; sourceTree = "<group>"; };
-		4E3CBCBF266A25E600EF2E8C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../../../../../Desktop/JitsiSDKTest/JitsiSDKTest/ViewController.swift; sourceTree = "<group>"; };
 		5A146386218E76D296B830A6 /* Pods-JitsiSDKScreenSharingTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JitsiSDKScreenSharingTest.release.xcconfig"; path = "Target Support Files/Pods-JitsiSDKScreenSharingTest/Pods-JitsiSDKScreenSharingTest.release.xcconfig"; sourceTree = "<group>"; };
 		62D5F558E9FD6E23FA872C1C /* Pods-JitsiSDKScreenSharingTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JitsiSDKScreenSharingTest.debug.xcconfig"; path = "Target Support Files/Pods-JitsiSDKScreenSharingTest/Pods-JitsiSDKScreenSharingTest.debug.xcconfig"; sourceTree = "<group>"; };
 		883F8060A1583DF4E17C9EC5 /* Pods-Broadcast Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Broadcast Extension.release.xcconfig"; path = "Target Support Files/Pods-Broadcast Extension/Pods-Broadcast Extension.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 				4E3CBC7B266A1EC500EF2E8C /* JitsiSDKScreenSharingTest.entitlements */,
 				4E3CBC54266A1E4300EF2E8C /* AppDelegate.swift */,
 				4E3CBC56266A1E4300EF2E8C /* SceneDelegate.swift */,
-				4E3CBCBF266A25E600EF2E8C /* ViewController.swift */,
+				4E39F1B0283395E6007746BA /* ViewController.swift */,
 				4E3CBCBE266A25E600EF2E8C /* JitsiMeetViewController.swift */,
 				4E3CBC5A266A1E4300EF2E8C /* Main.storyboard */,
 				4E3CBC5D266A1E4400EF2E8C /* Assets.xcassets */,
@@ -336,7 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E3CBCC1266A25E600EF2E8C /* ViewController.swift in Sources */,
+				4E39F1B1283395E6007746BA /* ViewController.swift in Sources */,
 				4E3CBCC0266A25E600EF2E8C /* JitsiMeetViewController.swift in Sources */,
 				4E3CBC55266A1E4300EF2E8C /* AppDelegate.swift in Sources */,
 				4E3CBC57266A1E4300EF2E8C /* SceneDelegate.swift in Sources */,
