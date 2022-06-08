@@ -1,5 +1,5 @@
 platform :ios, '12.0'
 
 target 'App' do
-    pod 'JitsiMeetSDK', '5.1.0'
+    pod 'JitsiMeetSDK', '5.2.0-alpha2'
 end

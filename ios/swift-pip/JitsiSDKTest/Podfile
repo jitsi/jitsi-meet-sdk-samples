@@ -1,5 +1,0 @@
-platform :ios, '12.0'
-
-target 'example-pip-app' do
-    pod 'JitsiMeetSDK', '5.1.0'
-end
