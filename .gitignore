@@ -34,3 +34,6 @@ build/
 local.properties
 *.iml
 
+# React native
+#
+react-native/node_modules
