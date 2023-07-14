@@ -4,14 +4,15 @@ import {JitsiMeeting} from '@jitsi/react-native-sdk/index';
 import {useNavigation} from '@react-navigation/native';
 
 interface MeetingProps {
-  text: string;
+  route: any;
 }
 
-const Meeting = ({text}: MeetingProps) => {
+const Meeting = ({route}: MeetingProps) => {
   const jitsiMeeting = useRef(null);
   const navigation = useNavigation();
+  const { roomName } = route.params;
 
-  const onClose = useCallback(() => {
+  const onReadyToClose = useCallback(() => {
     // @ts-ignore
     navigation.navigate('Home');
     // @ts-ignore
@@ -20,8 +21,8 @@ const Meeting = ({text}: MeetingProps) => {
 
   const meetingOptions = {
     domain: 'https://meet.jit.si',
-    onReadyToClose: onClose,
-    roomName: text,
+    onReadyToClose,
+    roomName,
     settings: {
       startWithAudioMuted: true,
       startWithVideoMuted: true,
@@ -30,15 +31,12 @@ const Meeting = ({text}: MeetingProps) => {
   };
 
   return (
-    <>
       <JitsiMeeting
-        // @ts-ignore
-        flags={{'call-integration.enabled': false}}
-        meetingOptions={meetingOptions}
-        ref={jitsiMeeting}
-        style={{flex: 1}}
-      />
-    </>
+          // @ts-ignore
+          flags={{'call-integration.enabled': true}}
+          meetingOptions={meetingOptions}
+          ref={jitsiMeeting}
+          style={{flex: 1}} />
   );
 };
 
