@@ -15,10 +15,10 @@ as follows:
 * [ios/swift-pip](ios/swift-pip): iOS example, written in Swift and showing how Picture-in-Picture can be implemented
 * [ios/swift-screensharing](ios/swift-screensharing): iOS example, written in Swift and showing how Screen Sharing can be implemented
 
+NOTE: You must be using Xcode >= 14.2 for the iOS examples to run.
+
 ## React Native
 
-* [android/ios](android/ios): Example written in React Native, that also uses React Navigation
-
-NOTE: You must be using Xcode >= 12.2 for the iOS examples to run.
+* [react-native](react-native):React Native example that also uses React Navigation.
 
 [Jitsi Meet]: https://github.com/jitsi/jitsi-meet
