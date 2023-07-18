@@ -10,7 +10,6 @@ prepare_react_native_project!
 
 target 'RNSDKTester' do
   config = use_native_modules!
-  pod 'ObjectiveDropboxOfficial', '6.2.3', :modular_headers => true
 
   use_react_native!(
     :path => config[:reactNativePath],

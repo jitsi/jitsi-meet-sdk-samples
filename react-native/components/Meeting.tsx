@@ -33,7 +33,7 @@ const Meeting = ({route}: MeetingProps) => {
   return (
       <JitsiMeeting
           // @ts-ignore
-          flags={{'call-integration.enabled': true}}
+          flags={{'call-integration.enabled': true}} // Set to false for the simulator.
           meetingOptions={meetingOptions}
           ref={jitsiMeeting}
           style={{flex: 1}} />
