@@ -12,7 +12,7 @@
   "dependencies": {
     "@amplitude/react-native": "2.7.0",
     "@giphy/react-native-sdk": "2.3.0",
-    "@jitsi/react-native-sdk": "0.1.0",
+    "@jitsi/react-native-sdk": "0.2.1",
     "@react-native-async-storage/async-storage": "1.18.2",
     "@react-native-community/clipboard": "1.5.1",
     "@react-native-community/netinfo": "7.1.7",
@@ -26,7 +26,7 @@
     "react-native-device-info": "8.4.8",
     "react-native-gesture-handler": "2.9.0",
     "react-native-get-random-values": "1.7.2",
-    "react-native-immersive": "2.0.0",
+    "react-native-immersive-mode": "2.0.1",
     "react-native-keep-awake": "4.0.0",
     "react-native-orientation-locker": "https://git@github.com/wonday/react-native-orientation-locker#f483520ea6b64b97002374a9e9f053a5299a062a",
     "react-native-pager-view": "5.4.9",
