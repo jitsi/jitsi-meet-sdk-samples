@@ -1,7 +1,10 @@
 import React, {useCallback, useRef} from 'react';
+import DeviceInfo from 'react-native-device-info';
 
 import {JitsiMeeting} from '@jitsi/react-native-sdk/index';
 import {useNavigation} from '@react-navigation/native';
+
+const isSimulator = DeviceInfo.isEmulatorSync();
 
 interface MeetingProps {
   route: any;
@@ -33,7 +36,7 @@ const Meeting = ({route}: MeetingProps) => {
   return (
       <JitsiMeeting
           // @ts-ignore
-          flags={{'call-integration.enabled': true}} // Set to false for the simulator.
+          flags={{'call-integration.enabled': !isSimulator}}
           meetingOptions={meetingOptions}
           ref={jitsiMeeting}
           style={{flex: 1}} />
