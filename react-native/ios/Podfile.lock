@@ -34,7 +34,7 @@ PODS:
     - AppAuth/Core (~> 1.6)
     - GTMSessionFetcher/Core (< 3.0, >= 1.5)
   - GTMSessionFetcher/Core (1.7.2)
-  - jitsi-meet-rnsdk (0.1.0):
+  - jitsi-meet-rnsdk (0.2.1):
     - ObjectiveDropboxOfficial (= 6.2.3)
     - React-Core
     - react-native-webrtc
@@ -719,7 +719,7 @@ SPEC CHECKSUMS:
   GoogleSignIn: fd381840dbe7c1137aa6dc30849a5c3e070c034a
   GTMAppAuth: 0ff230db599948a9ad7470ca667337803b3fc4dd
   GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
-  jitsi-meet-rnsdk: dbf40b7f4217af82d1a4a5cbe90b8a938d9114b3
+  jitsi-meet-rnsdk: 84127723a551a096fb4316c4fd49eb351909dcea
   JitsiWebRTC: 80f62908fcf2a1160e0d14b584323fb6e6be630b
   libwebp: f62cb61d0a484ba548448a4bd52aabf150ff6eef
   ObjectiveDropboxOfficial: fe206ce8c0bc49976c249d472db7fdbc53ebbd53
