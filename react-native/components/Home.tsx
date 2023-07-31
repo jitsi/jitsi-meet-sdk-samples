@@ -1,24 +1,29 @@
 import React, {useState} from 'react';
 import {Button, TextInput, View} from 'react-native';
+
 import {useNavigation} from '@react-navigation/native';
 
 const Home = () => {
     const navigation = useNavigation();
-    const [roomName, onChangeRoomName] = useState('');
+    const [room, onChangeRoom] = useState('');
 
     return (
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+        <View style={{
+            alignItems: 'center',
+            flex: 1,
+            justifyContent: 'center'
+        }}>
             <TextInput
                 // @ts-ignore
-                onChangeText={onChangeRoomName}
+                onChangeText={onChangeRoom}
                 placeholder="Enter room name here"
                 style={{color: 'black', padding: 32}}
-                value={roomName} />
+                value={room} />
             <Button
-                disabled={!roomName}
                 color="blue"
+                disabled={!room}
                 // @ts-ignore
-                onPress={() => navigation.navigate('Meeting', { roomName })}
+                onPress={() => navigation.navigate('Meeting', { room })}
                 // @ts-ignore
                 style={{height: 32, width: 32}}
                 title="Join" />
