@@ -21,4 +21,8 @@ NOTE: You must be using Xcode >= 14.2 for the iOS examples to run.
 
 * [react-native](react-native): React Native example that also uses React Navigation.
 
+## Flutter
+
+* [flutter](flutter): Flutter example.
+
 [Jitsi Meet]: https://github.com/jitsi/jitsi-meet
