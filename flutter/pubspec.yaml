@@ -30,10 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  jitsi_meet_flutter_sdk:
-    git:
-      url: https://github.com/jitsi/jitsi-meet-flutter-sdk.git
-      ref: main
+  jitsi_meet_flutter_sdk: ^0.1.2
 
 
   # The following adds the Cupertino Icons font to your application.

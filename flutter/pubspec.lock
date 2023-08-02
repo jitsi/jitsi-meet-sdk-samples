@@ -78,12 +78,11 @@ packages:
   jitsi_meet_flutter_sdk:
     dependency: "direct main"
     description:
-      path: "."
-      ref: main
-      resolved-ref: "07fe5de8e02575beba31583a82f3e6bed42a1ffc"
-      url: "https://github.com/jitsi/jitsi-meet-flutter-sdk.git"
-    source: git
-    version: "0.1.0"
+      name: jitsi_meet_flutter_sdk
+      sha256: "50be9e6693741e91f5bb75c44bc34cf83168a9b22ae08b6b0c633a8359b281f3"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.1.2"
   js:
     dependency: transitive
     description:
