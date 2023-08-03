@@ -1,4 +1,4 @@
-# Flutter Jitsi Meet Sample APp
+# Flutter Jitsi Meet Sample App
 
 
 ## Download packages
