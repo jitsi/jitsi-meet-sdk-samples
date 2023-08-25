@@ -1,34 +1,75 @@
-import React, {useState} from 'react';
-import {Button, TextInput, View} from 'react-native';
-
+import React from 'react';
+import {UseNavigationProp} from '../types';
 import {useNavigation} from '@react-navigation/native';
+import {TouchableOpacity, TextInput, View, StyleSheet, Text, Platform} from 'react-native';
 
-const Home = () => {
-    const navigation = useNavigation();
-    const [room, onChangeRoom] = useState('');
+const Home: React.FC = () => {
+    const navigation = useNavigation<UseNavigationProp>();
+
+    const [room, onChangeRoom] = React.useState<string>('');
+
+    const onJoinPress = React.useCallback(() => {
+      navigation.navigate('Meeting', {room});
+    }, [navigation, room]);
 
     return (
-        <View style={{
-            alignItems: 'center',
-            flex: 1,
-            justifyContent: 'center'
-        }}>
-            <TextInput
-                // @ts-ignore
-                onChangeText={onChangeRoom}
-                placeholder="Enter room name here"
-                style={{color: 'black', padding: 32}}
-                value={room} />
-            <Button
-                color="blue"
-                disabled={!room}
-                // @ts-ignore
-                onPress={() => navigation.navigate('Meeting', { room })}
-                // @ts-ignore
-                style={{height: 32, width: 32}}
-                title="Join" />
+        <View style={style.container}>
+          <TextInput
+            value={room} 
+            style={style.input}
+            onChangeText={onChangeRoom}
+            placeholder="Enter room name here"
+          />
+          <TouchableOpacity
+            disabled={!room}
+            style={[
+              style.button, 
+              !room 
+                ? style.disabledButton 
+                : style.activeButton
+              ]}
+            onPress={onJoinPress}
+            activeOpacity={0.6}>
+            <Text style={style.buttonText}>
+              Join
+            </Text>
+          </TouchableOpacity>
         </View>
     );
 };
 
 export default Home;
+
+const style = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  input: {
+    borderRadius: 5,
+    marginBottom: 16,
+    color: '#000000',
+    paddingHorizontal: 32,
+    backgroundColor: '#f7f9f9',
+    ...(Platform.OS === 'ios' && {
+      paddingVertical: 16,
+    })
+  },
+  button: {
+    width: 60,
+    height: 40,
+    borderRadius: 5,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  activeButton: {
+    backgroundColor: 'blue',
+  },
+  disabledButton: {
+    backgroundColor: 'gray'
+  },
+  buttonText: {
+    color: "#ffffff",
+  }
+})

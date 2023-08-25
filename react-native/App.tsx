@@ -6,24 +6,26 @@ import {createStackNavigator} from '@react-navigation/stack';
 import Home from './components/Home';
 import Meeting from './components/Meeting';
 
-const RootStack = createStackNavigator();
+import {type RootStackType} from './types'
 
-const App = () => (
+const RootStack = createStackNavigator<RootStackType>();
+
+const screenOptions = {
+  headerShown: false,
+};
+
+const App: React.FC = () => (
     <NavigationContainer>
       <RootStack.Navigator initialRouteName="Home">
         <RootStack.Screen
-          component={Home}
           name="Home"
-          options={{
-            headerShown: false,
-          }}
+          component={Home}
+          options={screenOptions}
         />
         <RootStack.Screen
-          component={Meeting}
           name="Meeting"
-          options={{
-            headerShown: false,
-          }}
+          component={Meeting}
+          options={screenOptions}
         />
       </RootStack.Navigator>
     </NavigationContainer>

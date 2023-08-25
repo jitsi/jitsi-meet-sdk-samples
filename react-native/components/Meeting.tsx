@@ -1,40 +1,55 @@
 import React, {useCallback, useRef} from 'react';
-
+import {
+  useRoute,
+  RouteProp,
+  useNavigation,
+} from '@react-navigation/native';
+import type {
+  RootStackType, 
+  IEventListeners, 
+  JitsiMeetingRef, 
+  UseNavigationProp
+} from '../types';
+import {StyleSheet} from 'react-native';
 import {JitsiMeeting} from '@jitsi/react-native-sdk/index';
 
-import {useNavigation} from '@react-navigation/native';
+const CONFIG = {};
+const SERVICE_URL = 'https://meet.jit.si/';
 
+const Meeting: React.FC = () => {
+  const jitsiMeeting = useRef<JitsiMeetingRef>(null);
 
-interface MeetingProps {
-  route: any;
-}
+  const navigation = useNavigation<UseNavigationProp>();
 
-const Meeting = ({route}: MeetingProps) => {
-  const jitsiMeeting = useRef(null);
-  const navigation = useNavigation();
-
-  const { room } = route.params;
+  const {
+    params: {room},
+  } = useRoute<RouteProp<RootStackType, 'Meeting'>>();
 
   const onReadyToClose = useCallback(() => {
-    // @ts-ignore
     navigation.navigate('Home');
-    // @ts-ignore
-    jitsiMeeting.current.close();
+    jitsiMeeting.current?.close();
   }, [navigation]);
 
-  const eventListeners = {
-    onReadyToClose
-  };
+  const eventListeners = React.useMemo((): IEventListeners => {
+    return {onReadyToClose}
+  }, []);
 
   return (
-      // @ts-ignore
-      <JitsiMeeting
-          eventListeners={eventListeners as any}
-          ref={jitsiMeeting}
-          style={{flex: 1}}
-          room={room}
-          serverURL={'https://meet.jit.si/'} />
+    <JitsiMeeting
+      room={room}
+      config={CONFIG}    
+      ref={jitsiMeeting}
+      style={style.jitsi}
+      serverURL={SERVICE_URL}
+      eventListeners={eventListeners} 
+    />
   );
 };
 
 export default Meeting;
+
+const style = StyleSheet.create({
+  jitsi: {
+    flex: 1,
+  }
+})
