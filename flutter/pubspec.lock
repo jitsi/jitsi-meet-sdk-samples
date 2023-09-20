@@ -79,10 +79,10 @@ packages:
     dependency: "direct main"
     description:
       name: jitsi_meet_flutter_sdk
-      sha256: "7fabf9934e57b8cb3d70061b1c6f059c8ea798959bd6f56797a49b2b54095f38"
+      sha256: "1f29afbfa84cc09cb1443b44f6f9e14e46a20e1209d01992a7bb23d695e38762"
       url: "https://pub.dev"
     source: hosted
-    version: "0.1.6"
+    version: "0.1.7"
   js:
     dependency: transitive
     description:
