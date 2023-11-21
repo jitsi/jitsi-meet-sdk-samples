@@ -34,7 +34,7 @@ PODS:
     - AppAuth/Core (~> 1.6)
     - GTMSessionFetcher/Core (< 4.0, >= 1.5)
   - GTMSessionFetcher/Core (3.1.1)
-  - jitsi-meet-rnsdk (1.0.0):
+  - jitsi-meet-rnsdk (1.0.2):
     - ObjectiveDropboxOfficial (= 6.2.3)
     - React-Core
     - react-native-webrtc
@@ -334,7 +334,7 @@ PODS:
     - React
   - react-native-netinfo (9.4.1):
     - React-Core
-  - react-native-orientation-locker (1.5.0):
+  - react-native-orientation-locker (1.6.0):
     - React-Core
   - react-native-pager-view (6.2.0):
     - React-Core
@@ -723,7 +723,7 @@ SPEC CHECKSUMS:
   GoogleSignIn: b232380cf495a429b8095d3178a8d5855b42e842
   GTMAppAuth: 99fb010047ba3973b7026e45393f51f27ab965ae
   GTMSessionFetcher: e8647203b65cee28c5f73d0f473d096653945e72
-  jitsi-meet-rnsdk: bee51a3ec8453786760ff883496f9abfdf344745
+  jitsi-meet-rnsdk: 3b3950f8a5f208f294e99fb13f6f56868e2cb4ce
   JitsiWebRTC: 80f62908fcf2a1160e0d14b584323fb6e6be630b
   libwebp: 1786c9f4ff8a279e4dac1e8f385004d5fc253009
   ObjectiveDropboxOfficial: fe206ce8c0bc49976c249d472db7fdbc53ebbd53
@@ -748,7 +748,7 @@ SPEC CHECKSUMS:
   react-native-get-random-values: dee677497c6a740b71e5612e8dbd83e7539ed5bb
   react-native-keep-awake: afad8a51dfef9fe9655a6344771be32c8596d774
   react-native-netinfo: fefd4e98d75cbdd6e85fc530f7111a8afdf2b0c5
-  react-native-orientation-locker: 851f6510d8046ea2f14aa169b1e01fcd309a94ba
+  react-native-orientation-locker: 4409c5b12b65f942e75449872b4f078b6f27af81
   react-native-pager-view: 0ccb8bf60e2ebd38b1f3669fa3650ecce81db2df
   react-native-performance: 47ac22ebf2aa24f324a96a5825581f6ce18c09e8
   react-native-safe-area-context: 9697629f7b2cda43cf52169bb7e0767d330648c2
