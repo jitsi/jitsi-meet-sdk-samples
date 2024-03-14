@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 34
+    compileSdkVersion 33
     defaultConfig {
         applicationId "net.jitsi.sdktest"
         minSdkVersion 24
-        targetSdkVersion 34
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -42,5 +42,5 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
 
     // Jitsi Meet
-    implementation ('org.jitsi.react:jitsi-meet-sdk:9.0.1') { transitive = true }
+    implementation ('org.jitsi.react:jitsi-meet-sdk:9.0.2') { transitive = true }
 }
