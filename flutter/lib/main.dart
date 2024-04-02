@@ -33,8 +33,24 @@ class _MyHomePageState extends State<MyHomePage> {
   final meetingNameController = TextEditingController();
   final jitsiMeet = JitsiMeet();
   void join() {
-    
-    var options = JitsiMeetConferenceOptions(room: meetingNameController.text);
+
+    var options = JitsiMeetConferenceOptions(
+      serverURL: "https://meet.jit.si",
+      room: "test0987test",
+      configOverrides: {
+        "startWithAudioMuted": true,
+        "startWithVideoMuted": true,
+        "subject" : "JitsiwithFlutter",
+        "localSubject" : "localJitsiwithFlutter",
+      },
+      featureFlags: {
+        "unsaferoomwarning.enabled": false
+      },
+      userInfo: JitsiMeetUserInfo(
+          displayName: "Flutter user",
+          email: "user@example.com"
+      ),
+    );
     jitsiMeet.join(options);
   }
 
@@ -65,7 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
               width: 100,
               height: 50,
               child: FilledButton(
-                onPressed: join, 
+                onPressed: join,
                 style: ButtonStyle(
                   shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0))),
                 ),
