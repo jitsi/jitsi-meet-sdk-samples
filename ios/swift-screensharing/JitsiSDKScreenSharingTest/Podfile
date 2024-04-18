@@ -13,6 +13,6 @@ target 'JitsiSDKScreenSharingTest' do
   use_frameworks!
 
   # Pods for JitsiSDKScreenSharingTest
-  pod 'JitsiMeetSDK', '9.1.0'
+  pod 'JitsiMeetSDK', '9.2.1'
 
 end
