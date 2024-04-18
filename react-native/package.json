@@ -1,6 +1,6 @@
 {
   "name": "RNSDKTester",
-  "version": "0.1.2",
+  "version": "0.2.1",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -13,7 +13,7 @@
     "@amplitude/react-native": "2.7.0",
     "@braintree/sanitize-url": "7.0.0",
     "@giphy/react-native-sdk": "2.3.0",
-    "@jitsi/react-native-sdk": "2.0.2",
+    "@jitsi/react-native-sdk": "2.2.1",
     "@react-native-async-storage/async-storage": "1.19.4",
     "@react-native-community/clipboard": "1.5.1",
     "@react-native-community/netinfo": "11.1.0",
@@ -41,7 +41,7 @@
     "react-native-svg": "13.13.0",
     "react-native-video": "6.0.0-alpha.11",
     "react-native-watch-connectivity": "1.1.0",
-    "react-native-webrtc": "118.0.2",
+    "react-native-webrtc": "118.0.6",
     "react-native-webview": "13.5.1",
     "text-encoding": "0.7.0"
   },
