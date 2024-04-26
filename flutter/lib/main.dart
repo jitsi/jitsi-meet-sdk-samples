@@ -44,7 +44,8 @@ class _MyHomePageState extends State<MyHomePage> {
         "localSubject" : "localJitsiwithFlutter",
       },
       featureFlags: {
-        "unsaferoomwarning.enabled": false
+        "unsaferoomwarning.enabled": false,
+        "security-options.enabled": false
       },
       userInfo: JitsiMeetUserInfo(
           displayName: "Flutter user",
