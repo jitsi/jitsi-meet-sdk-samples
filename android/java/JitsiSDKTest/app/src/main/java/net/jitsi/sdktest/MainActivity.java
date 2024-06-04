@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 //.setToken("MyJWT")
                 // Different features flags can be set
                 // .setFeatureFlag("toolbox.enabled", false)
-                // .setFeatureFlag("filmstrip.enabled", false)
+                .setFeatureFlag("prejoinpage.enabled", false)
                 .setFeatureFlag("welcomepage.enabled", false)
                 .build();
         JitsiMeet.setDefaultConferenceOptions(defaultOptions);
@@ -78,8 +78,8 @@ public class MainActivity extends AppCompatActivity {
                     = new JitsiMeetConferenceOptions.Builder()
                     .setRoom(text)
                     // Settings for audio and video
-                    //.setAudioMuted(true)
-                    //.setVideoMuted(true)
+                    .setAudioMuted(true)
+                    .setVideoMuted(true)
                     .build();
             // Launch the new activity with the given options. The launch() method takes care
             // of creating the required Intent and passing the options.
