@@ -22,8 +22,13 @@ const Meeting = ( { route }: MeetingProps ) => {
     jitsiMeeting.current.close();
   }, [navigation]);
 
+  const onEndpointMessageReceived = useCallback(() => {
+      console.log('You got a message!');
+  }, []);
+
   const eventListeners = {
-    onReadyToClose
+        onReadyToClose,
+        onEndpointMessageReceived
   };
 
   return (
@@ -31,7 +36,6 @@ const Meeting = ( { route }: MeetingProps ) => {
       <JitsiMeeting
           config = {{
             hideConferenceTimer: true,
-            subject: "React Native SDK",
             customToolbarButtons: [
               {
                 icon: "https://w7.pngwing.com/pngs/987/537/png-transparent-download-downloading-save-basic-user-interface-icon-thumbnail.png",
@@ -46,7 +50,8 @@ const Meeting = ( { route }: MeetingProps ) => {
           }}
           eventListeners = { eventListeners as any }
           flags = {{
-            "invite.enabled": true
+            "invite.enabled": true,
+            "ios.screensharing.enabled": true
           }}
           ref = { jitsiMeeting }
           style = {{ flex: 1 }}
