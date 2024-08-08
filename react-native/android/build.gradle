@@ -3,7 +3,7 @@
 buildscript {
     ext {
         kotlinVersion = "1.7.0"
-        buildToolsVersion = "31.0.0"
+        buildToolsVersion = "33.0.2"
         compileSdkVersion = 34
         minSdkVersion    = 24
         targetSdkVersion = 34
@@ -17,9 +17,9 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.1.1'
-        classpath 'com.google.gms:google-services:4.3.14'
-        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.2'
+        classpath 'com.android.tools.build:gradle:7.4.2'
+        classpath 'com.google.gms:google-services:4.4.0'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.9'
         classpath 'com.facebook.react:react-native-gradle-plugin'
     }
 }
