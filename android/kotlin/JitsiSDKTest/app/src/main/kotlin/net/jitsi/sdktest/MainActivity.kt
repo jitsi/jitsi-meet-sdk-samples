@@ -7,14 +7,18 @@ import android.content.IntentFilter
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
+import androidx.annotation.NonNull
 import androidx.appcompat.app.AppCompatActivity
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import org.jitsi.meet.sdk.*
 import timber.log.Timber
 import java.net.MalformedURLException
 import java.net.URL
+import java.util.ArrayList
 
 class MainActivity : AppCompatActivity() {
+
+    private var customToolbarButtons: ArrayList<Bundle> = getCustomToolbarButtons()
 
     private val broadcastReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context?, intent: Intent?) {
@@ -43,6 +47,7 @@ class MainActivity : AppCompatActivity() {
                 //.setFeatureFlag("toolbox.enabled", false)
                 //.setFeatureFlag("filmstrip.enabled", false)
                 .setFeatureFlag("welcomepage.enabled", false)
+                .setConfigOverride("customToolbarButtons", customToolbarButtons)
                 .build()
         JitsiMeet.setDefaultConferenceOptions(defaultOptions)
 
@@ -58,6 +63,7 @@ class MainActivity : AppCompatActivity() {
     fun onButtonClick(v: View?) {
         val editText = findViewById<EditText>(R.id.conferenceName)
         val text = editText.text.toString()
+
         if (text.isNotEmpty()) {
             // Build options object for joining the conference. The SDK will merge the default
             // one we set earlier and this one when joining.
@@ -73,6 +79,27 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    @NonNull
+    private fun getCustomToolbarButtons(): ArrayList<Bundle> {
+        val customToolbarButtons: ArrayList<Bundle> = ArrayList<Bundle>()
+        val firstCustomButton = Bundle()
+        val secondCustomButton = Bundle()
+        firstCustomButton.putString("text", "Button one")
+        firstCustomButton.putString(
+            "icon",
+            "https://w7.pngwing.com/pngs/987/537/png-transparent-download-downloading-save-basic-user-interface-icon-thumbnail.png"
+        )
+        firstCustomButton.putString("id", "btn1")
+        secondCustomButton.putString("text", "Button two")
+        secondCustomButton.putString(
+            "icon",
+            "https://w7.pngwing.com/pngs/987/537/png-transparent-download-downloading-save-basic-user-interface-icon-thumbnail.png"
+        )
+        secondCustomButton.putString("id", "btn2")
+        customToolbarButtons.add(firstCustomButton)
+        customToolbarButtons.add(secondCustomButton)
+        return customToolbarButtons
+    }
 
     private fun registerForBroadcastMessages() {
         val intentFilter = IntentFilter()

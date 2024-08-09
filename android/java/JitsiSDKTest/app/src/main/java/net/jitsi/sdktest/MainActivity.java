@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
@@ -19,10 +20,13 @@ import org.jitsi.meet.sdk.JitsiMeetConferenceOptions;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 
 import timber.log.Timber;
 
 public class MainActivity extends AppCompatActivity {
+
+    ArrayList<Bundle> customToolbarButtons = getCustomToolbarButtons();
 
     private final BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
         @Override
@@ -54,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 // .setFeatureFlag("toolbox.enabled", false)
                 .setFeatureFlag("prejoinpage.enabled", false)
                 .setFeatureFlag("welcomepage.enabled", false)
+                .setConfigOverride("customToolbarButtons", customToolbarButtons)
                 .build();
         JitsiMeet.setDefaultConferenceOptions(defaultOptions);
 
@@ -71,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         EditText editText = findViewById(R.id.conferenceName);
         String text = editText.getText().toString();
 
-        if (text.length() > 0) {
+        if (!text.isEmpty()) {
             // Build options object for joining the conference. The SDK will merge the default
             // one we set earlier and this one when joining.
             JitsiMeetConferenceOptions options
@@ -85,6 +90,26 @@ public class MainActivity extends AppCompatActivity {
             // of creating the required Intent and passing the options.
             JitsiMeetActivity.launch(this, options);
         }
+    }
+
+    private static @NonNull ArrayList<Bundle> getCustomToolbarButtons() {
+        ArrayList<Bundle> customToolbarButtons = new ArrayList<>();
+
+        Bundle firstCustomButton = new Bundle();
+        Bundle secondCustomButton = new Bundle();
+
+        firstCustomButton.putString("text", "Button one");
+        firstCustomButton.putString("icon", "https://w7.pngwing.com/pngs/987/537/png-transparent-download-downloading-save-basic-user-interface-icon-thumbnail.png");
+        firstCustomButton.putString("id", "btn1");
+
+        secondCustomButton.putString("text", "Button two");
+        secondCustomButton.putString("icon", "https://w7.pngwing.com/pngs/987/537/png-transparent-download-downloading-save-basic-user-interface-icon-thumbnail.png");
+        secondCustomButton.putString("id", "btn2");
+
+        customToolbarButtons.add(firstCustomButton);
+        customToolbarButtons.add(secondCustomButton);
+
+        return customToolbarButtons;
     }
 
     private void registerForBroadcastMessages() {
