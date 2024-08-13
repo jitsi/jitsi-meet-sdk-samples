@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         val serverURL: URL
         serverURL = try {
             // When using JaaS, replace "https://meet.jit.si" with the proper serverURL
-            URL("https://meet.jit.si")
+            URL("https://alpha.jitsi.net/")
         } catch (e: MalformedURLException) {
             e.printStackTrace()
             throw RuntimeException("Invalid server URL!")
