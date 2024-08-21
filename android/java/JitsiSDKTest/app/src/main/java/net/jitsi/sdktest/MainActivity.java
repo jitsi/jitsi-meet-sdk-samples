@@ -52,12 +52,7 @@ public class MainActivity extends AppCompatActivity {
         JitsiMeetConferenceOptions defaultOptions
                 = new JitsiMeetConferenceOptions.Builder()
                 .setServerURL(serverURL)
-                // When using JaaS, set the obtained JWT here
-                //.setToken("MyJWT")
-                // Different features flags can be set
-                // .setFeatureFlag("toolbox.enabled", false)
-                .setFeatureFlag("prejoinpage.enabled", false)
-                .setFeatureFlag("welcomepage.enabled", false)
+                .setFeatureFlag("pip.enabled", false)
                 .setConfigOverride("customToolbarButtons", customToolbarButtons)
                 .build();
         JitsiMeet.setDefaultConferenceOptions(defaultOptions);
@@ -85,6 +80,12 @@ public class MainActivity extends AppCompatActivity {
                     // Settings for audio and video
                     .setAudioMuted(true)
                     .setVideoMuted(true)
+                    // When using JaaS, set the obtained JWT here
+                    //.setToken("MyJWT")
+                    // Different features flags can be set
+                    //.setFeatureFlag("toolbox.enabled", false)
+                    .setFeatureFlag("prejoinpage.enabled", false)
+                    .setFeatureFlag("welcomepage.enabled", false)
                     .build();
             // Launch the new activity with the given options. The launch() method takes care
             // of creating the required Intent and passing the options.
