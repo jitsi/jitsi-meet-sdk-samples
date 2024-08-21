@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         val serverURL: URL
         serverURL = try {
             // When using JaaS, replace "https://meet.jit.si" with the proper serverURL
-            URL("https://alpha.jitsi.net/")
+            URL("https://meet.jit.si/")
         } catch (e: MalformedURLException) {
             e.printStackTrace()
             throw RuntimeException("Invalid server URL!")
@@ -47,6 +47,8 @@ class MainActivity : AppCompatActivity() {
                 //.setFeatureFlag("toolbox.enabled", false)
                 //.setFeatureFlag("filmstrip.enabled", false)
                 .setFeatureFlag("welcomepage.enabled", false)
+                .setFeatureFlag("prejoinpage.enabled", false)
+                .setFeatureFlag("pip.enabled", false)
                 .setConfigOverride("customToolbarButtons", customToolbarButtons)
                 .build()
         JitsiMeet.setDefaultConferenceOptions(defaultOptions)
