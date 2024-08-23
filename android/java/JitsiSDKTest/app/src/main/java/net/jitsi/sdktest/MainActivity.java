@@ -84,7 +84,8 @@ public class MainActivity extends AppCompatActivity {
                     //.setToken("MyJWT")
                     // Different features flags can be set
                     //.setFeatureFlag("toolbox.enabled", false)
-                    .setFeatureFlag("prejoinpage.enabled", false)
+                    //.setFeatureFlag("prejoinpage.enabled", false)
+                    .setFeatureFlag("pip.enabled", true)
                     .setFeatureFlag("welcomepage.enabled", false)
                     .build();
             // Launch the new activity with the given options. The launch() method takes care

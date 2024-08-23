@@ -46,9 +46,9 @@ class MainActivity : AppCompatActivity() {
                 // Different features flags can be set
                 //.setFeatureFlag("toolbox.enabled", false)
                 //.setFeatureFlag("filmstrip.enabled", false)
+                .setFeatureFlag("pip.enabled", true)
                 .setFeatureFlag("welcomepage.enabled", false)
-                .setFeatureFlag("prejoinpage.enabled", false)
-                .setFeatureFlag("pip.enabled", false)
+                //.setFeatureFlag("prejoinpage.enabled", false)
                 .setConfigOverride("customToolbarButtons", customToolbarButtons)
                 .build()
         JitsiMeet.setDefaultConferenceOptions(defaultOptions)
