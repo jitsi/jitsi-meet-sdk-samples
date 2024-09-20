@@ -1,0 +1,6 @@
+platform :ios, '13.4'
+
+target 'JitsiSDKTest' do
+  pod 'Giphy', '2.2.4'
+  pod 'JitsiWebRTC', '~> 124.0'
+end
