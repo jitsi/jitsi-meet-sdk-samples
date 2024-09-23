@@ -2,13 +2,13 @@ PODS:
   - Flutter (1.0.0)
   - Giphy (2.2.4):
     - libwebp
-  - jitsi_meet_flutter_sdk (10.0.1):
+  - jitsi_meet_flutter_sdk (10.2.1):
     - Flutter
-    - JitsiMeetSDK (= 10.0.0)
-  - JitsiMeetSDK (10.0.0):
+    - JitsiMeetSDK (= 10.2.1)
+  - JitsiMeetSDK (10.2.1):
     - Giphy (= 2.2.4)
     - JitsiWebRTC (~> 124.0)
-  - JitsiWebRTC (124.0.0)
+  - JitsiWebRTC (124.0.1)
   - libwebp (1.3.2):
     - libwebp/demux (= 1.3.2)
     - libwebp/mux (= 1.3.2)
@@ -42,11 +42,11 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   Giphy: 6b5f6986c8df4f71e01a8ef86595f426b3439fb5
-  jitsi_meet_flutter_sdk: 1fb486aff348dfa2a3853951b7d8dcb3411183fe
-  JitsiMeetSDK: cfa73fe1b1fe9a4127749b656524a80b7bce4a98
-  JitsiWebRTC: 37fb2fb70d42cac58c06948527a5f9e1b3f50812
+  jitsi_meet_flutter_sdk: 1c75d5f7cf2f8a893d36fd6bb90d69ac02a87de9
+  JitsiMeetSDK: cdba360baf6426a2f98cdc313c5b352d8cd3bbd7
+  JitsiWebRTC: d0ae5fd6a81e771bfd82c2ee6c6bb542ebd65ee8
   libwebp: 1786c9f4ff8a279e4dac1e8f385004d5fc253009
 
-PODFILE CHECKSUM: f6e9bbe1c611753388eef015187d0d762163292d
+PODFILE CHECKSUM: a33f59345450d290a8dbcf342843f42525e4989f
 
 COCOAPODS: 1.15.2
