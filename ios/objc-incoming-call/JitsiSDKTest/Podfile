@@ -1,4 +1,4 @@
-platform :ios, '13.4'
+platform :ios, '15.1'
 
 target 'JitsiSDKTest' do
   pod 'Giphy', '2.2.4'
