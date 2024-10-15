@@ -10,8 +10,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    JMCallKitProxy.enabled = YES;
 
     if (self.room == nil) {
         NSLog(@"Room is nul!");
@@ -22,42 +20,42 @@
 
         return;
     }
-    
+
     [JMCallKitProxy addListener:self];
-    
+
     [JMCallKitProxy reportNewIncomingCallWithUUID:[NSUUID UUID] handle:self.room displayName:self.room hasVideo:YES completion:^(NSError * _Nullable error) {
         NSLog(@"Incoming call reported!");
     }];
 }
 
 - (void)providerDidReset {
-    
+
 }
 
 - (void)providerDidActivateAudioSessionWithSession:(AVAudioSession *)session {
-    
+
 }
 
 - (void)providerTimedOutPerformingActionWithAction:(CXAction *)action {
-    
+
 }
 
 - (void)providerDidDeactivateAudioSessionWithSession:(AVAudioSession *)session {
-    
+
 }
 
 - (void)performAnswerCallWithUUID:(nonnull NSUUID *)UUID {
-    
+
     NSLog(@"Call answered!");
 
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(15 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        
+
         NSLog(@"Call answered finalized!");
-        
+
         // Attach this controller as the delegate.
         JitsiMeetView *jitsiView = (JitsiMeetView*)self.view;
         jitsiView.delegate = self;
-    
+
         // Join the room.
         JitsiMeetConferenceOptions *options
             = [JitsiMeetConferenceOptions fromBuilder:^(JitsiMeetConferenceOptionsBuilder *builder) {
@@ -76,9 +74,16 @@
 }
 
 - (void) performStartCallWithUUID:(NSUUID *)UUID isVideo:(BOOL)isVideo{
-    
+
 }
 
+- (void) performEndCallWithUUID:(NSUUID *)UUID {
+
+}
+
+- (void) performSetMutedCallWithUUID:(NSUUID *)UUID isMuted:(BOOL)isMuted{
+
+}
 
 - (void)conferenceWillJoin:(NSDictionary *)data {
     NSLog(@"About to join conference %@", self.room);
