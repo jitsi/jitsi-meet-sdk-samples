@@ -46,12 +46,24 @@ const Meeting = ( { route }: MeetingProps ) => {
                 id: "btn2",
                 text: "Button two"
               }
-            ]
+            ],
+              whiteboard: {
+                  enabled: true,
+                  collabServerBaseUrl: "https://meet.jit.si/",
+              },
           }}
           eventListeners = { eventListeners as any }
           flags = {{
-            "invite.enabled": true,
-            "ios.screensharing.enabled": true
+              "audioMute.enabled": true,
+              "ios.screensharing.enabled": true,
+              "fullscreen.enabled": false,
+              "audioOnly.enabled": false,
+              "android.screensharing.enabled": true,
+              "pip.enabled": true,
+              "pip-while-screen-sharing.enabled": true,
+              "conference-timer.enabled": true,
+              "close-captions.enabled": false,
+              "toolbox.enabled": true,
           }}
           ref = { jitsiMeeting }
           style = {{ flex: 1 }}
