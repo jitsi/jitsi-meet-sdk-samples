@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 .setServerURL(serverURL)
                 .setFeatureFlag("pip.enabled", false)
                 .setConfigOverride("customToolbarButtons", customToolbarButtons)
+                .setConfigOverride("recordingService", getRecordingService())
                 .build();
         JitsiMeet.setDefaultConferenceOptions(defaultOptions);
 
@@ -112,6 +113,14 @@ public class MainActivity extends AppCompatActivity {
         customToolbarButtons.add(secondCustomButton);
 
         return customToolbarButtons;
+    }
+
+    private static Bundle getRecordingService() {
+        Bundle recordingService = new Bundle();
+        recordingService.putBoolean("enabled", true);
+        recordingService.putBoolean("sharingEnabled", true);
+
+        return recordingService;
     }
 
     private void registerForBroadcastMessages() {
