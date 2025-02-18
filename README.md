@@ -14,8 +14,9 @@ as follows:
 * [ios/swift](ios/swift): iOS example, written in Swift
 * [ios/swift-pip](ios/swift-pip): iOS example, written in Swift and showing how Picture-in-Picture can be implemented
 * [ios/swift-screensharing](ios/swift-screensharing): iOS example, written in Swift and showing how Screen Sharing can be implemented
+* [ios/swiftui](ios/swiftui): iOS example using SwiftUI
 
-NOTE: You must be using Xcode >= 14.2 for the iOS examples to run.
+NOTE: You must be using Xcode >= 16 for the iOS examples to run.
 
 ## React Native
 
