@@ -47,10 +47,11 @@ const Meeting = ( { route }: MeetingProps ) => {
                 text: "Button two"
               }
             ],
-              whiteboard: {
-                  enabled: true,
-                  collabServerBaseUrl: "https://meet.jit.si/",
-              },
+            toolbarButtons: [ 'microphone', 'camera', 'screensharing', 'overflowmenu', 'hangup' ],
+            whiteboard: {
+                enabled: true,
+                collabServerBaseUrl: "https://meet.jit.si/",
+            },
           }}
           eventListeners = { eventListeners as any }
           flags = {{
