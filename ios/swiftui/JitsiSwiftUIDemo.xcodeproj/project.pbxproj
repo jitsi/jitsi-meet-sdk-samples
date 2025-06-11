@@ -274,7 +274,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"$(SRCROOT)/JitsiSwiftUIDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = FC967L3QRG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/JitsiSwiftUIDemo//Info.plist";
@@ -304,7 +304,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"$(SRCROOT)/JitsiSwiftUIDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = FC967L3QRG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/JitsiSwiftUIDemo//Info.plist";
@@ -355,7 +355,7 @@
 			repositoryURL = "https://github.com/jitsi/jitsi-meet-ios-sdk-releases.git";
 			requirement = {
 				kind = exactVersion;
-				version = 11.0.4;
+				version = 11.2.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
