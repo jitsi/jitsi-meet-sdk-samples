@@ -34,6 +34,7 @@ class ViewController: UIViewController {
             // for JaaS use the obtained Jitsi JWT
             // builder.token = "SampleJWT"
             builder.setFeatureFlag("welcomepage.enabled", withValue: false)
+            builder.setFeatureFlag("prejoinpage.enabled", withValue: false)
             // Set different feature flags
             // builder.setFeatureFlag("toolbox.enabled", withBoolean: false)
             // builder.setFeatureFlag("filmstrip.enabled", withBoolean: false)

@@ -33,6 +33,7 @@
             // builder.videoMuted = YES;
             // Set different feature flags
             [builder setFeatureFlag:@"add-people.enabled" withBoolean:NO];
+            [builder setFeatureFlag:@"prejoinpage.enabled" withBoolean:NO];
             [builder setFeatureFlag:@"filmstrip.enabled" withBoolean:YES];
             // [builder setConfigOverride:@"customToolbarButtons" withArray:@[
             //   @{
