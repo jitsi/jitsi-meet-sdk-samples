@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     var options = JitsiMeetConferenceOptions(
       serverURL: "https://meet.jit.si",
-      room: "test0987test",
+      room: "test098765test",
       configOverrides: {
         "startWithAudioMuted": true,
         "startWithVideoMuted": true,
