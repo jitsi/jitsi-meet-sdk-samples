@@ -44,7 +44,7 @@ PODS:
   - hermes-engine (250829098.0.10):
     - hermes-engine/Pre-built (= 250829098.0.10)
   - hermes-engine/Pre-built (250829098.0.10)
-  - jitsi-meet-rnsdk (13.1.0):
+  - jitsi-meet-rnsdk (13.1.1):
     - ObjectiveDropboxOfficial (= 6.2.3)
     - React-Core
     - react-native-webrtc
@@ -2699,7 +2699,7 @@ SPEC CHECKSUMS:
   GTMAppAuth: f69bd07d68cd3b766125f7e072c45d7340dea0de
   GTMSessionFetcher: 5aea5ba6bd522a239e236100971f10cb71b96ab6
   hermes-engine: bf5a0109546915a7c66adc3c808034aacc8c1964
-  jitsi-meet-rnsdk: 861d91256ee69a2f5f2c7eec1e2039e5b9740f17
+  jitsi-meet-rnsdk: c91af74fddec052bedbb443b2a4e862aca6b9b19
   JitsiWebRTC: b47805ab5668be38e7ee60e2258f49badfe8e1d0
   libwebp: 02b23773aedb6ff1fd38cec7a77b81414c6842a8
   ObjectiveDropboxOfficial: fe206ce8c0bc49976c249d472db7fdbc53ebbd53
