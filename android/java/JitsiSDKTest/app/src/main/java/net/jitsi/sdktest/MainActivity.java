@@ -1,10 +1,14 @@
 package net.jitsi.sdktest;
 
+import android.app.Activity;
+import android.app.Application;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.View;
 import android.widget.EditText;
 
@@ -36,6 +40,25 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    // Frees the React Native runtime once JitsiMeetActivity is gone. The post runs after its
+    // window detaches, which is when its JitsiMeetView gets disposed.
+    private final Application.ActivityLifecycleCallbacks jitsiActivityCallbacks
+            = new Application.ActivityLifecycleCallbacks() {
+        @Override
+        public void onActivityDestroyed(@NonNull Activity activity) {
+            if (activity instanceof JitsiMeetActivity && !activity.isChangingConfigurations()) {
+                new Handler(Looper.getMainLooper()).post(JitsiMeet::destroyReactNative);
+            }
+        }
+
+        @Override public void onActivityCreated(@NonNull Activity activity, Bundle savedInstanceState) {}
+        @Override public void onActivityStarted(@NonNull Activity activity) {}
+        @Override public void onActivityResumed(@NonNull Activity activity) {}
+        @Override public void onActivityPaused(@NonNull Activity activity) {}
+        @Override public void onActivityStopped(@NonNull Activity activity) {}
+        @Override public void onActivitySaveInstanceState(@NonNull Activity activity, @NonNull Bundle outState) {}
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,11 +85,13 @@ public class MainActivity extends AppCompatActivity {
         JitsiMeet.setDefaultConferenceOptions(defaultOptions);
 
         registerForBroadcastMessages();
+        getApplication().registerActivityLifecycleCallbacks(jitsiActivityCallbacks);
     }
 
     @Override
     protected void onDestroy() {
         LocalBroadcastManager.getInstance(this).unregisterReceiver(broadcastReceiver);
+        getApplication().unregisterActivityLifecycleCallbacks(jitsiActivityCallbacks);
 
         super.onDestroy();
     }
@@ -93,6 +118,9 @@ public class MainActivity extends AppCompatActivity {
                     .setFeatureFlag("welcomepage.enabled", false)
                     //.setFeatureFlag("recording.enabled", true)
                     .build();
+            // Make sure the React Native runtime is up before joining.
+            JitsiMeet.instantiateReactNative(this);
+
             // Launch the new activity with the given options. The launch() method takes care
             // of creating the required Intent and passing the options.
             JitsiMeetActivity.launch(this, options);
@@ -171,6 +199,10 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case PARTICIPANT_JOINED:
                     Timber.i("Participant joined%s", event.getData().get("name"));
+                    break;
+                case CONFERENCE_TERMINATED:
+                    Timber.i("Conference terminated");
+                    hangUp();
                     break;
             }
         }

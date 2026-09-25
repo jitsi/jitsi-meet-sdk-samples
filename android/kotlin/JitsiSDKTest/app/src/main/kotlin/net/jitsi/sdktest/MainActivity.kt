@@ -1,10 +1,14 @@
 package net.jitsi.sdktest
 
+import android.app.Activity
+import android.app.Application
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.View
 import android.widget.EditText
 import androidx.annotation.NonNull
@@ -24,6 +28,23 @@ class MainActivity : AppCompatActivity() {
         override fun onReceive(context: Context?, intent: Intent?) {
             onBroadcastReceived(intent)
         }
+    }
+
+    // Frees the React Native runtime once JitsiMeetActivity is gone. The post runs after its
+    // window detaches, which is when its JitsiMeetView gets disposed.
+    private val jitsiActivityCallbacks = object : Application.ActivityLifecycleCallbacks {
+        override fun onActivityDestroyed(activity: Activity) {
+            if (activity is JitsiMeetActivity && !activity.isChangingConfigurations) {
+                Handler(Looper.getMainLooper()).post { JitsiMeet.destroyReactNative() }
+            }
+        }
+
+        override fun onActivityCreated(activity: Activity, savedInstanceState: Bundle?) {}
+        override fun onActivityStarted(activity: Activity) {}
+        override fun onActivityResumed(activity: Activity) {}
+        override fun onActivityPaused(activity: Activity) {}
+        override fun onActivityStopped(activity: Activity) {}
+        override fun onActivitySaveInstanceState(activity: Activity, outState: Bundle) {}
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,10 +75,12 @@ class MainActivity : AppCompatActivity() {
         JitsiMeet.setDefaultConferenceOptions(defaultOptions)
 
         registerForBroadcastMessages()
+        application.registerActivityLifecycleCallbacks(jitsiActivityCallbacks)
     }
 
     override fun onDestroy() {
         LocalBroadcastManager.getInstance(this).unregisterReceiver(broadcastReceiver)
+        application.unregisterActivityLifecycleCallbacks(jitsiActivityCallbacks)
         super.onDestroy()
     }
 
@@ -75,6 +98,9 @@ class MainActivity : AppCompatActivity() {
                     //.setAudioMuted(true)
                     //.setVideoMuted(true)
                     .build()
+            // Make sure the React Native runtime is up before joining.
+            JitsiMeet.instantiateReactNative(this)
+
             // Launch the new activity with the given options. The launch() method takes care
             // of creating the required Intent and passing the options.
             JitsiMeetActivity.launch(this, options)
@@ -127,6 +153,10 @@ class MainActivity : AppCompatActivity() {
             when (event.type) {
                 BroadcastEvent.Type.CONFERENCE_JOINED -> Timber.i("Conference Joined with url%s", event.getData().get("url"))
                 BroadcastEvent.Type.PARTICIPANT_JOINED -> Timber.i("Participant joined%s", event.getData().get("name"))
+                BroadcastEvent.Type.CONFERENCE_TERMINATED -> {
+                    Timber.i("Conference terminated")
+                    hangUp()
+                }
                 else -> Timber.i("Received event: %s", event.type)
             }
         }
