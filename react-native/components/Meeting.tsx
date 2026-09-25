@@ -16,8 +16,9 @@ const Meeting = ( { route }: MeetingProps ) => {
   const { room } = route.params;
 
   const onReadyToClose = useCallback(() => {
+    // react-navigation 7: navigate() pushes a new Home instead of popping back to it.
     // @ts-ignore
-    navigation.navigate('Home');
+    navigation.popTo('Home');
     // @ts-ignore
     jitsiMeeting.current.close();
   }, [navigation]);
@@ -26,9 +27,14 @@ const Meeting = ( { route }: MeetingProps ) => {
       console.log('You got a message!');
   }, []);
 
+  const onScreenShareToggled = useCallback(({ sharing }: { sharing: boolean }) => {
+      console.log('screen share', sharing);
+  }, []);
+
   const eventListeners = {
         onReadyToClose,
-        onEndpointMessageReceived
+        onEndpointMessageReceived,
+        onScreenShareToggled
   };
 
   return (

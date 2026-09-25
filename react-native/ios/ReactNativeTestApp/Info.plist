@@ -43,6 +43,10 @@
 	<string>Mic</string>
 	<key>RCTNewArchEnabled</key>
 	<true/>
+	<key>RTCAppGroupIdentifier</key>
+	<string>group.org.jitsi.meet.rnsdktester.appgroup</string>
+	<key>RTCScreenSharingExtension</key>
+	<string>org.jitsi.meet.rnsdktester.broadcast</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>
