@@ -60,6 +60,9 @@
             // ]];
             // [builder setConfigOverride:@"toolbarButtons" withArray:@[@"record", @"location", @"screenshot", @"swap-camera", @"close"]];
         }];
+    // Make sure the React Native runtime is up before joining.
+    [[JitsiMeet sharedInstance] instantiateReactNative];
+
     [jitsiView join:options];
 }
 
@@ -76,7 +79,10 @@
 }
 
 - (void)readyToClose:(NSDictionary *)data {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:^{
+        // Free the React Native runtime once the conference view is gone.
+        [[JitsiMeet sharedInstance] destroyReactNative];
+    }];
 }
 
 - (void)customButtonPressed:(NSDictionary *)data {

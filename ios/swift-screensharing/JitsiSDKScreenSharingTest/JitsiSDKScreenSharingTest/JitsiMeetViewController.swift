@@ -38,15 +38,21 @@ class JitsiMeetViewController: UIViewController {
             builder.setFeatureFlag("ios.screensharing.enabled", withBoolean: true)
 
         }
-        
+
+        // Make sure the React Native runtime is up before joining.
+        JitsiMeet.sharedInstance().instantiateReactNative()
+
         meetView.join(options)
     }
 }
 
 extension JitsiMeetViewController: JitsiMeetViewDelegate {
-    
+
     func conferenceTerminated(_ data: [AnyHashable : Any]!) {
-        dismiss(animated: true)
+        dismiss(animated: true) {
+            // Free the React Native runtime once the conference view is gone.
+            JitsiMeet.sharedInstance().destroyReactNative()
+        }
     }
 }
 

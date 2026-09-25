@@ -97,6 +97,9 @@ class ViewController: UIViewController {
             // builder.videoMuted = true;
         }
         
+        // Make sure the React Native runtime is up before joining.
+        JitsiMeet.sharedInstance().instantiateReactNative()
+
         // join room and display jitsi-call
         jitsiMeetView.join(options)
         
@@ -115,6 +118,9 @@ class ViewController: UIViewController {
         jitsiMeetView?.removeFromSuperview()
         jitsiMeetView = nil
         pipViewCoordinator = nil
+
+        // Free the React Native runtime once the conference view is gone.
+        JitsiMeet.sharedInstance().destroyReactNative()
     }
 }
 
