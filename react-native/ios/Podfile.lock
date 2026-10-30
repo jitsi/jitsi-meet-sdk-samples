@@ -1724,7 +1724,7 @@ PODS:
     - ReactCommon/turbomodule/core
     - ReactNativeDependencies
     - Yoga
-  - react-native-webrtc (155.0.0):
+  - react-native-webrtc (155.0.1):
     - JitsiWebRTC (~> 155.0.0)
     - React-Core
   - react-native-webview (13.16.0):
@@ -2754,7 +2754,7 @@ SPEC CHECKSUMS:
   react-native-safe-area-context: 8368d1052ccc8fe8725adfb6a83498c8bdb48250
   react-native-slider: f9910f69950b9953c46e091377c1265b71eb01f0
   react-native-video: 82fc4acb1b62f7fd8b3c0e6b88b691510bd92ab3
-  react-native-webrtc: a5f5df9460c9f14952f992ed0bbb1e0d87c5427b
+  react-native-webrtc: f55aa2ad5ed12a04bb1fad72c7f57c401ada7277
   react-native-webview: 96c45c7e019eeaae562589b78b67924d5816d2c1
   react-native-worklets-core: ef226db5329621f858eacf95713dfdabdce72f49
   React-NativeModulesApple: deba264b03bd79c6bd61014fa30e40321b5e443a
