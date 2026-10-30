@@ -44,11 +44,11 @@ PODS:
   - hermes-engine (250829098.0.10):
     - hermes-engine/Pre-built (= 250829098.0.10)
   - hermes-engine/Pre-built (250829098.0.10)
-  - jitsi-meet-rnsdk (13.2.0):
+  - jitsi-meet-rnsdk (13.3.0):
     - ObjectiveDropboxOfficial (= 6.2.3)
     - React-Core
     - react-native-webrtc
-  - JitsiWebRTC (124.0.2)
+  - JitsiWebRTC (155.0.1)
   - libwebp (1.5.0):
     - libwebp/demux (= 1.5.0)
     - libwebp/mux (= 1.5.0)
@@ -1724,8 +1724,8 @@ PODS:
     - ReactCommon/turbomodule/core
     - ReactNativeDependencies
     - Yoga
-  - react-native-webrtc (124.0.8):
-    - JitsiWebRTC (~> 124.0.0)
+  - react-native-webrtc (155.0.0):
+    - JitsiWebRTC (~> 155.0.0)
     - React-Core
   - react-native-webview (13.16.0):
     - hermes-engine
@@ -2702,8 +2702,8 @@ SPEC CHECKSUMS:
   GTMAppAuth: f69bd07d68cd3b766125f7e072c45d7340dea0de
   GTMSessionFetcher: 5aea5ba6bd522a239e236100971f10cb71b96ab6
   hermes-engine: bf5a0109546915a7c66adc3c808034aacc8c1964
-  jitsi-meet-rnsdk: b0d8bac0d0a343cb9a431dec5d179355afe578ce
-  JitsiWebRTC: b47805ab5668be38e7ee60e2258f49badfe8e1d0
+  jitsi-meet-rnsdk: 8269423cfa50124e2134b17c281624aa08996b87
+  JitsiWebRTC: a8ac2b2b54c523fb156016de4ab86b6666dc99d9
   libwebp: 02b23773aedb6ff1fd38cec7a77b81414c6842a8
   ObjectiveDropboxOfficial: fe206ce8c0bc49976c249d472db7fdbc53ebbd53
   RCTDeprecation: a4c521821fab57cbb125b36effe84d897d0dfa12
@@ -2754,7 +2754,7 @@ SPEC CHECKSUMS:
   react-native-safe-area-context: 8368d1052ccc8fe8725adfb6a83498c8bdb48250
   react-native-slider: f9910f69950b9953c46e091377c1265b71eb01f0
   react-native-video: 82fc4acb1b62f7fd8b3c0e6b88b691510bd92ab3
-  react-native-webrtc: da75ba1f85a36981cbcb3fdae7dfbab7ad63c040
+  react-native-webrtc: a5f5df9460c9f14952f992ed0bbb1e0d87c5427b
   react-native-webview: 96c45c7e019eeaae562589b78b67924d5816d2c1
   react-native-worklets-core: ef226db5329621f858eacf95713dfdabdce72f49
   React-NativeModulesApple: deba264b03bd79c6bd61014fa30e40321b5e443a

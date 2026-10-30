@@ -12,7 +12,7 @@
   "dependencies": {
     "@amplitude/analytics-react-native": "1.5.16",
     "@giphy/react-native-sdk": "5.0.1",
-    "@jitsi/react-native-sdk": "13.2.0",
+    "@jitsi/react-native-sdk": "13.3.0",
     "@react-native-async-storage/async-storage": "1.23.1",
     "@react-native-clipboard/clipboard": "1.16.3",
     "@react-native-community/netinfo": "11.5.2",
@@ -36,7 +36,7 @@
     "react-native-splash-view": "0.0.18",
     "react-native-svg": "15.15.5",
     "react-native-video": "6.19.1",
-    "react-native-webrtc": "124.0.8",
+    "react-native-webrtc": "155.0.0",
     "react-native-webview": "13.16.0",
     "react-native-worklets-core": "https://github.com/jitsi/react-native-worklets-core.git#8b20145466186a369d13dd38e979642035a9bda1",
     "reselect": "5.2.0"
