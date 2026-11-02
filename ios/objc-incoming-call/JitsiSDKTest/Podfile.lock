@@ -1,7 +1,7 @@
 PODS:
   - Giphy (2.2.4):
     - libwebp
-  - JitsiWebRTC (124.0.2)
+  - JitsiWebRTC (155.0.1)
   - libwebp (1.5.0):
     - libwebp/demux (= 1.5.0)
     - libwebp/mux (= 1.5.0)
@@ -17,7 +17,7 @@ PODS:
 
 DEPENDENCIES:
   - Giphy (= 2.2.4)
-  - JitsiWebRTC (~> 124.0)
+  - JitsiWebRTC (~> 155.0)
 
 SPEC REPOS:
   trunk:
@@ -27,9 +27,9 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Giphy: 6b5f6986c8df4f71e01a8ef86595f426b3439fb5
-  JitsiWebRTC: b47805ab5668be38e7ee60e2258f49badfe8e1d0
+  JitsiWebRTC: a8ac2b2b54c523fb156016de4ab86b6666dc99d9
   libwebp: 02b23773aedb6ff1fd38cec7a77b81414c6842a8
 
-PODFILE CHECKSUM: dc6b72083f8ff12da3be7c7423bb6866259da6e2
+PODFILE CHECKSUM: 80730ac4f337cdd2ebb9965056d8a0da83e8e8f6
 
 COCOAPODS: 1.16.2
