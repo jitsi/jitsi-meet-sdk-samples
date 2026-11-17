@@ -155,17 +155,14 @@ class MainActivity : AppCompatActivity() {
                 BroadcastEvent.Type.PARTICIPANT_JOINED -> Timber.i("Participant joined%s", event.getData().get("name"))
                 BroadcastEvent.Type.CONFERENCE_TERMINATED -> {
                     Timber.i("Conference terminated")
-                    // Do not hang up here: the conference has already ended, and an extra
-                    // hang-up makes the SDK send READY_TO_CLOSE a second time.
-                    // hangUp()
+                    hangUp()
                 }
                 else -> Timber.i("Received event: %s", event.type)
             }
         }
     }
 
-    // Example for sending actions to JitsiMeetSDK.
-    // Use it to leave a conference from the host app, not in reply to CONFERENCE_TERMINATED.
+    // Example for sending actions to JitsiMeetSDK
     private fun hangUp() {
         val hangupBroadcastIntent: Intent = BroadcastIntentHelper.buildHangUpIntent()
         LocalBroadcastManager.getInstance(this.applicationContext).sendBroadcast(hangupBroadcastIntent)
