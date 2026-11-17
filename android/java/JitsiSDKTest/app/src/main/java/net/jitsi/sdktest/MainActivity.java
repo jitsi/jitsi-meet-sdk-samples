@@ -202,13 +202,16 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case CONFERENCE_TERMINATED:
                     Timber.i("Conference terminated");
-                    hangUp();
+                    // Do not hang up here: the conference has already ended, and an extra
+                    // hang-up makes the SDK send READY_TO_CLOSE a second time.
+                    // hangUp();
                     break;
             }
         }
     }
 
-    // Example for sending actions to JitsiMeetSDK
+    // Example for sending actions to JitsiMeetSDK.
+    // Use it to leave a conference from the host app, not in reply to CONFERENCE_TERMINATED.
     private void hangUp() {
         Intent hangupBroadcastIntent = BroadcastIntentHelper.buildHangUpIntent();
         LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(hangupBroadcastIntent);
