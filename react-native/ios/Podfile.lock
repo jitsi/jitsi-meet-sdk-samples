@@ -44,7 +44,7 @@ PODS:
   - hermes-engine (250829098.0.10):
     - hermes-engine/Pre-built (= 250829098.0.10)
   - hermes-engine/Pre-built (250829098.0.10)
-  - jitsi-meet-rnsdk (13.3.0):
+  - jitsi-meet-rnsdk (13.3.3):
     - ObjectiveDropboxOfficial (= 6.2.3)
     - React-Core
     - react-native-webrtc
@@ -2228,9 +2228,29 @@ PODS:
     - ReactCommon/turbomodule/core
     - ReactNativeDependencies
     - Yoga
-  - RNGoogleSignin (10.1.0):
-    - GoogleSignIn (~> 7.0)
+  - RNGoogleSignin (12.2.1):
+    - GoogleSignIn (~> 7.1)
+    - hermes-engine
+    - RCTRequired
+    - RCTTypeSafety
     - React-Core
+    - React-Core-prebuilt
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - ReactNativeDependencies
+    - Yoga
   - RNScreens (4.23.0):
     - hermes-engine
     - RCTRequired
@@ -2694,15 +2714,15 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   amplitude-react-native: 27dc9831ff5edebfeb159efcf39b01d5db7451a0
-  AppAuth: d4f13a8fe0baf391b2108511793e4b479691fb73
+  AppAuth: 58e37c546bb9bf2073c1392ccba8cef35ff283cb
   FBLazyVector: 24e62c765683b8d89006a88a2c8f5cf019f0074d
   Giphy: 55914215541027873875757f350530e6d8986fba
   giphy-react-native-sdk: c1d9c8b79cd1f4539c86c9e3d706480216913d9f
-  GoogleSignIn: d4281ab6cf21542b1cfaff85c191f230b399d2db
-  GTMAppAuth: f69bd07d68cd3b766125f7e072c45d7340dea0de
+  GoogleSignIn: 4ac041cf807e78942e3c0863775a98ee8c8e0f7c
+  GTMAppAuth: 4a3fbbb34098b327feaa51cfbf98b0b12f6892e7
   GTMSessionFetcher: 5aea5ba6bd522a239e236100971f10cb71b96ab6
-  hermes-engine: bf5a0109546915a7c66adc3c808034aacc8c1964
-  jitsi-meet-rnsdk: 8269423cfa50124e2134b17c281624aa08996b87
+  hermes-engine: 143bee337058ea436532419682bd603cdcb4bf9f
+  jitsi-meet-rnsdk: 87ad86253279283434f275e25de68c8c77477e7a
   JitsiWebRTC: a8ac2b2b54c523fb156016de4ab86b6666dc99d9
   libwebp: 02b23773aedb6ff1fd38cec7a77b81414c6842a8
   ObjectiveDropboxOfficial: fe206ce8c0bc49976c249d472db7fdbc53ebbd53
@@ -2715,7 +2735,7 @@ SPEC CHECKSUMS:
   React-callinvoker: 28b25d21b124c26cebaea713ba7d801b9351dc48
   React-Codegen: 4b8b4817cea7a54b83851d4c1f91f79aa73de30a
   React-Core: 02ed7d2ffb70437bdf2aba074a13078a7b0b9ff0
-  React-Core-prebuilt: 6267279c102dacd1b4b7f6e5b67c32b3ec0c85b2
+  React-Core-prebuilt: ef99a0c96366c2bb9c0f33e1b7d5130a0d47d5f8
   React-CoreModules: b3a5a42dadcde3b5d47b325bd912eb2ced89e146
   React-cxxreact: fe8f88dda044e5905e99a00f41b7a874c3908716
   React-debug: 92944dc4d89f56d640e75498266cbde557a48189
@@ -2790,14 +2810,14 @@ SPEC CHECKSUMS:
   ReactAppDependencyProvider: 25c9c516839be2c5e3d3344f95dc7da5f7e63fc2
   ReactCodegen: c8f81e6c6f762dcf442a6203a1fb58f7dafc8014
   ReactCommon: 7dfc3250793bf36cf221096ff59e1179e13eef7f
-  ReactNativeDependencies: 8d1e1e3bbefb24bd59d25271be43ffb6b58a3226
+  ReactNativeDependencies: adc2fdc93d2a2e994ec925dab3c305153b9959e2
   RNCalendarEvents: 62e1ac89d3afbfa77cf2dafa8727af93fa70825f
   RNCAsyncStorage: d0aafe51ea74a65afce26acb739a4ea975a7a884
   RNCClipboard: 715fa7c6c8366f17d00f05a439ee7488f390fa5f
   RNDefaultPreference: ee13d69e6693d193cd223d10e15e5b3c012d31ba
   RNDeviceInfo: bcce8752b5043a623fe3c26789679b473f705d3c
   RNGestureHandler: c398c4c9db7c7209bc876fc2c0563f56ff299772
-  RNGoogleSignin: 30e1aee80140dc0706cd78a4951c411376c88329
+  RNGoogleSignin: 043a5361ae590b4f8f22cb257cb1994116e9c98d
   RNScreens: 9569f60a48170e4e3e797eb887af1609a7583442
   RNSound: 44d60adbf0a0212f043aecdc852ecc3e8229b8be
   RNSVG: 0e52210d4d43165e7e2cf9c890a9848b27e513ac

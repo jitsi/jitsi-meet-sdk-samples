@@ -12,12 +12,12 @@
   "dependencies": {
     "@amplitude/analytics-react-native": "1.5.16",
     "@giphy/react-native-sdk": "5.0.1",
-    "@jitsi/react-native-sdk": "13.3.0",
+    "@jitsi/react-native-sdk": "13.3.3",
     "@react-native-async-storage/async-storage": "1.23.1",
     "@react-native-clipboard/clipboard": "1.16.3",
     "@react-native-community/netinfo": "11.5.2",
     "@react-native-community/slider": "5.1.2",
-    "@react-native-google-signin/google-signin": "10.1.0",
+    "@react-native-google-signin/google-signin": "12.2.1",
     "@sayem314/react-native-keep-awake": "1.4.0",
     "react": "19.2.3",
     "react-native": "~0.85.0",
@@ -38,7 +38,7 @@
     "react-native-video": "6.19.1",
     "react-native-webrtc": "155.0.1",
     "react-native-webview": "13.16.0",
-    "react-native-worklets-core": "https://github.com/jitsi/react-native-worklets-core.git#8b20145466186a369d13dd38e979642035a9bda1",
+    "react-native-worklets-core": "https://github.com/jitsi/react-native-worklets-core.git#fad63bad3229041d8b28b1ffce11499df81c6ecd",
     "reselect": "5.2.0"
   },
   "devDependencies": {
