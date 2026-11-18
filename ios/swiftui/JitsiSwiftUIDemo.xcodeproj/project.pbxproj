@@ -355,7 +355,7 @@
 			repositoryURL = "https://github.com/jitsi/jitsi-meet-ios-sdk-releases.git";
 			requirement = {
 				kind = exactVersion;
-				version = 13.3.1;
+				version = 13.3.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
