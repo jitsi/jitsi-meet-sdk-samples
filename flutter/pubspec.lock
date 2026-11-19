@@ -79,10 +79,10 @@ packages:
     dependency: "direct main"
     description:
       name: jitsi_meet_flutter_sdk
-      sha256: "06190f70bd510ef83e57f59593f5033f209bcde89b9f398efb95ad9dd51465c9"
+      sha256: f3f52a8a191d7bcd027eafd112d97a336d41991e035146e3cf38525d41da54c7
       url: "https://pub.dev"
     source: hosted
-    version: "13.3.3"
+    version: "13.3.4"
   leak_tracker:
     dependency: transitive
     description:
