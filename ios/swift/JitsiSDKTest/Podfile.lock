@@ -1,7 +1,7 @@
 PODS:
   - Giphy (2.2.16):
     - libwebp
-  - JitsiMeetSDK (13.3.3):
+  - JitsiMeetSDK (13.3.4):
     - Giphy (= 2.2.16)
     - JitsiWebRTC (>= 155.0.1, ~> 155.0)
   - JitsiWebRTC (155.0.1)
@@ -19,7 +19,7 @@ PODS:
     - libwebp/sharpyuv
 
 DEPENDENCIES:
-  - JitsiMeetSDK (= 13.3.3)
+  - JitsiMeetSDK (= 13.3.4)
 
 SPEC REPOS:
   trunk:
@@ -30,10 +30,10 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Giphy: 55914215541027873875757f350530e6d8986fba
-  JitsiMeetSDK: 1e02042e32210e678aa539707960bd3e9c9945ab
+  JitsiMeetSDK: e9da2287b23bea1ea258a1082d65ed89dc391dbf
   JitsiWebRTC: a8ac2b2b54c523fb156016de4ab86b6666dc99d9
   libwebp: af5937a13536ef73f3784d69cc342b98961acf33
 
-PODFILE CHECKSUM: 39851a9543a4a369a5597ac976e65d7bb838ee84
+PODFILE CHECKSUM: cb1cebb090d2f2fb1031cb3d1403219153dfd93e
 
 COCOAPODS: 1.16.2
